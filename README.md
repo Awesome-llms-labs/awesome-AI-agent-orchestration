@@ -4,6 +4,9 @@
 
 A single agent is a loop: prompt, think, act, observe. Orchestration is everything that makes *many* agents — or one agent over *long* horizons — reliable: how work is decomposed and routed, where state lives when the process dies, how agents discover and pay each other, how humans approve dangerous steps, and how you debug the whole thing at 3 a.m.
 
+> **Scope:** This list is about the *coordination mechanisms* — how agents (one or many) are composed, routed, and made reliable over long horizons: orchestration frameworks (multi-agent graphs, swarms, supervisor hierarchies), agent-to-agent protocols, memory and durable state, platforms and schedulers that run agents in production, observability/eval tooling, benchmarks, and the research papers that defined the field. It goes deeper on mechanisms than the ecosystem-wide [awesome-ai-agents](https://github.com/awesome-llms-labs/awesome-ai-agents), and it is broader than [awesome-multi-agents-workflow](https://github.com/awesome-llms-labs/awesome-multi-agents-workflow), which covers *collaboration only* and explicitly excludes single-agent frameworks.
+
+
 **Verification confidence:** every entry is stamped ✅ **verified** (the claim was confirmed on the vendor's official page, the project repo, or the arXiv abstract page; verification dates 2026-09-29/30) or ⚠️ **unverified** (official-page fetch was rate-limited, so facts rest on search snippets only — never invented). Machine-readable records live in [`data/orchestration.json`](data/orchestration.json) with an `orchestration_verified` boolean per entry. **Scores, specs, and dates are never guessed.**
 
 **Scale:** 98 entries across 7 categories — 29 frameworks, 9 protocols, 10 memory systems, 18 platforms, 13 observability/eval tools, 10 benchmarks, 9 papers. **88 verified** on official sources; **10 explicitly marked unverified** (listed in the README with a ⚠️ and a reason, never dropped).
@@ -242,3 +245,4 @@ Entries and corrections are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). 
 ## License
 
 [MIT](LICENSE) © 2026 dakotac1994
+
