@@ -9,7 +9,7 @@ A single agent is a loop: prompt, think, act, observe. Orchestration is everythi
 **Scale:** 98 entries across 7 categories — 29 frameworks, 9 protocols, 10 memory systems, 18 platforms, 13 observability/eval tools, 10 benchmarks, 9 papers. **88 verified** on official sources; **10 explicitly marked unverified** (listed in the README with a ⚠️ and a reason, never dropped).
 
 ## Contents
-
+https://crewai.com/amp
 - [Orchestration frameworks](#orchestration-frameworks)
   - [General-purpose multi-agent frameworks](#general-purpose-multi-agent-frameworks)
   - [Typed, durable-native, and governance-first](#typed-durable-native-and-governance-first)
@@ -123,7 +123,7 @@ Someone else's computers, running your agents — with deployment, scaling, and 
 - [Salesforce Agentforce](https://www.salesforce.com/agentforce/multi-agent-orchestration/) — ✅ Salesforce: primary agent routes to specialist secondary agents on the Atlas Reasoning Engine, with A2A support for third-party agents and built-in observability; grounded in CRM/Data Cloud.
 - [IBM watsonx Orchestrate](https://www.ibm.com/think/topics/multi-agent-collaboration) — ✅ IBM: enterprise multi-agent collaboration — supervisor/orchestrator routes work across skills (independent agents) via Intent Parser and Flow Orchestrator, with shared context/memory, cross-agent visibility, and cost monitoring.
 - [UiPath Maestro](https://www.uipath.com/platform/agentic-automation) — ✅ UiPath: agentic automation control plane coordinating **humans, agents, and systems** — Orchestration (BPMN/Flow/Case), Execution, Governance layers; human judgment as a first-class workflow step; agent registry governing third-party agents (Foundry, Bedrock, LangChain, CrewAI); durable pause/resume/recover.
-- [CrewAI AMP](https://www.crewai.com/enterprise) — ✅ CrewAI Inc.: managed enterprise suite — build crews in Crew Studio (visual/YAML), deploy to managed infrastructure, consume via API endpoints; executions, live crews, and seats metered.
+- [CrewAI AMP](https://crewai.com/amp) — ✅ CrewAI Inc.: managed enterprise suite — build crews in Crew Studio (visual/YAML), deploy to managed infrastructure, consume via API endpoints; executions, live crews, and seats metered.
 - [Cloudflare Agents](https://developers.cloudflare.com/agents/) — ✅ Cloudflare: stateful agents on Workers (Durable Objects) that coordinate other agents via `getAgentByName`; official multi-agent worker/pipeline examples.
 - [Gemini Enterprise (formerly Google Agentspace)](https://cloud.google.com/geminienterprise) — ⚠️ Google Cloud: the employee-facing governed AI platform (enterprise connectors, agents, search/chat) — distinct from the developer-facing Agent Platform above. (Snippet-level.)
 
