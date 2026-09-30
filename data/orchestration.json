@@ -1,0 +1,1793 @@
+[
+  {
+    "category": "framework",
+    "description": "Low-level framework for building, managing, and deploying long-running, stateful agents as graphs with durable execution and human-in-the-loop.",
+    "features": [
+      "Durable execution: agents run long and automatically resume after failures (per repo README)",
+      "Human-in-the-loop: humans can inspect and modify agent state mid-run via interrupt (per repo README)",
+      "Short-term (working) and long-term memory support (per repo README)",
+      "Branching and subgraphs for complex, non-linear agent workflows (per repo README)",
+      "MIT license; commercial ecosystem: LangSmith deployment and observability (per repo README)"
+    ],
+    "name": "LangGraph",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/langchain-ai/langgraph",
+    "status": "active",
+    "url": "https://github.com/langchain-ai/langgraph",
+    "vendor": "LangChain",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Open-source Python framework for production-ready multi-agent workflows: role-based Crews for autonomous collaboration and event-driven Flows for fine-grained control.",
+    "features": [
+      "Crews: role-based agents with autonomous decision-making, dynamic task delegation, sequential/hierarchical processes (per repo README)",
+      "Flows: event-driven automations with secure consistent state, conditional branching, single-LLM-call support (per repo README)",
+      "JSON-first crew projects (agents/*.jsonc, crew.jsonc) via `crewai create crew` CLI; classic Python/YAML scaffold available (per repo README)",
+      "FAQ covers memory, guardrails, and human-in-the-loop review workflows (per repo README)",
+      "Commercial: CrewAI AMP Suite (managed deployment, observability, governance) with Crew Control Plane free to try (per repo README)"
+    ],
+    "name": "CrewAI",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/crewAIInc/crewAI",
+    "status": "active",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "vendor": "CrewAI Inc.",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Microsoft Research framework for multi-agent LLM applications via conversable agents; officially in maintenance mode — Microsoft directs new users to Microsoft Agent Framework.",
+    "features": [
+      "Maintenance mode: no new features; community-managed going forward; migration guide to Microsoft Agent Framework exists (per repo README)",
+      "Core API: message passing, event-driven agents, local and distributed runtime (Python + .NET); AgentChat for two-agent chat and group chats; Extensions for model clients and code execution (per repo README)",
+      "Magentic-One multi-agent team built on AgentChat + Extensions (per repo README)",
+      "AutoGen Studio: no-code GUI for prototyping, explicitly not production-ready (per repo README)",
+      "Contributions limited to bug fixes, security patches, docs; MIT code (per repo README)"
+    ],
+    "name": "AutoGen",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/microsoft/autogen",
+    "status": "maintenance",
+    "url": "https://github.com/microsoft/autogen",
+    "vendor": "Microsoft",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29. Maintenance mode: community-managed, no new features; Microsoft points new users to Microsoft Agent Framework."
+  },
+  {
+    "category": "framework",
+    "description": "Microsoft's unified successor to AutoGen and Semantic Kernel: production-stable SDK for agents plus graph-based multi-agent workflows (v1.0, April 2026).",
+    "features": [
+      "Successor to Semantic Kernel and AutoGen: both projects' READMEs point new users here with migration guides",
+      "Graph-based multi-agent workflows: sequential, concurrent, handoff, and group-collaboration patterns with checkpointing and HITL approvals (per official README)",
+      "Dual-language Python and .NET SDKs with API symmetry; Go SDK in development (per official README)",
+      "Declarative YAML agent definitions; MCP/A2A protocol support; LTS commitment (per official README)",
+      "MIT license (per official README)"
+    ],
+    "name": "Microsoft Agent Framework",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/microsoft/agent-framework",
+    "status": "active",
+    "url": "https://github.com/microsoft/agent-framework",
+    "vendor": "Microsoft",
+    "verified_date": "2026-09-30",
+    "notes": "Verified on the official repo README (github.com/microsoft/agent-framework) 2026-09-30: public MIT repo; graph-based workflows (sequential, concurrent, handoff, group collaboration) with checkpointing, streaming, HITL, time-travel; Python + .NET parity with Go via microsoft/agent-framework-go; Semantic Kernel and AutoGen migration guides present."
+  },
+  {
+    "category": "framework",
+    "description": "Community spin-off of AutoGen (\"The Open-Source AgentOS\"): protocol-driven, async throughout, with a Network/Hub coordination model replacing classic group chats.",
+    "features": [
+      "AG2 v1.0 imported as `ag2`; async throughout — Agent.ask(...) returns AgentReply (per repo README)",
+      "Network model: Hub owns registry, write-ahead log, audit trail; agents communicate over typed channels (per repo README)",
+      "Tools via @tool decorators with full tool-calling loop; HITL via context.input(...) and hitl_hook (per repo README)",
+      "Agent harness: persistent knowledge, context assembly, history compaction (per repo README)",
+      "AG2 Classic (ag2ai/ag2-classic) holds the original AutoGen-derived framework and is still maintained (per repo README)"
+    ],
+    "name": "AG2",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/ag2ai/ag2",
+    "status": "active",
+    "url": "https://github.com/ag2ai/ag2",
+    "vendor": "ag2ai (community)",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Lightweight, provider-agnostic multi-agent SDK: agents as tools, structured handoffs, guardrails, built-in HITL, sessions, and tracing.",
+    "features": [
+      "Agents can be used as tools for other agents, with structured handoffs between agents (per repo README)",
+      "Guardrails for input/output validation (per repo README)",
+      "Built-in human-in-the-loop, sessions, and tracing support (per repo README)",
+      "Includes sandbox, realtime, and voice-agent capabilities (per repo README)",
+      "MIT license (per repo README)"
+    ],
+    "name": "OpenAI Agents SDK",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/openai/openai-agents-python",
+    "status": "active",
+    "url": "https://github.com/openai/openai-agents-python",
+    "vendor": "OpenAI",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Google's Agent Development Kit: graph-based workflow runtime with routing, fan-out/fan-in, loops, retries, state, HITL, and nested workflows.",
+    "features": [
+      "Workflow Runtime: routing, fan-out/fan-in, loops, retries, state, human-in-the-loop, nested workflows (per repo README)",
+      "Task API for structured agent delegation; hierarchical multi-agent composition (per repo README)",
+      "Model- and deployment-agnostic, though Gemini-optimized (per repo README)",
+      "Roughly bi-weekly release cadence (per repo README)",
+      "Apache-2.0 (per repo README)"
+    ],
+    "name": "Google ADK",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/google/adk-python",
+    "status": "active",
+    "url": "https://github.com/google/adk-python",
+    "vendor": "Google",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Microsoft's model-agnostic agent SDK with tools/plugins, memory, planning, and a Process Framework — now succeeded by Microsoft Agent Framework 1.0.",
+    "features": [
+      "Model-agnostic agents with tools/plugins, memory, and planning; multi-agent specialist collaboration (per repo README)",
+      "Process Framework for structured business workflows (per repo README)",
+      "Python, .NET, and Java SDKs (per repo README)",
+      "README states Semantic Kernel is now succeeded by Microsoft Agent Framework 1.0; migration guide linked (per repo README)",
+      "Repo public and unarchived; MIT (per repo README)"
+    ],
+    "name": "Semantic Kernel",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/microsoft/semantic-kernel",
+    "status": "maintenance",
+    "url": "https://github.com/microsoft/semantic-kernel",
+    "vendor": "Microsoft",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29. Superseded by Microsoft Agent Framework 1.0 per its own README."
+  },
+  {
+    "category": "framework",
+    "description": "SDK for building agent platforms: agents, teams, and workflows with memory, knowledge, guardrails, and 100+ integrations.",
+    "features": [
+      "Core abstractions: agents, teams, and workflows (per official docs)",
+      "Memory, knowledge, guardrails, and 100+ integrations (per official docs)",
+      "AgentOS runs the platform as a secure, durable API and MCP server; Control Plane manages and monitors (per official docs)",
+      "Commercial-backed OSS: AgentOS cloud + Control Plane offering (per official docs)"
+    ],
+    "name": "Agno",
+    "orchestration_verified": true,
+    "source_url": "https://docs.agno.com",
+    "status": "active",
+    "url": "https://docs.agno.com",
+    "vendor": "Agno",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Minimal, code-first agent framework from Hugging Face: CodeAgent writes Python as its actions; multi-agent hierarchies; model- and tool-agnostic.",
+    "features": [
+      "CodeAgent writes Python code as its actions; ToolCallingAgent uses conventional tool calls (per repo README)",
+      "Supports multi-agent hierarchies (per repo README)",
+      "Model-, tool-, and modality-agnostic (per repo README)",
+      "State via agent memory and ReAct-style execution (per repo README)",
+      "Security caveat: local code executor is NOT a security boundary — use sandboxed execution (E2B, Blaxel, Modal, Docker) (per repo README)"
+    ],
+    "name": "SmolAgents",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/huggingface/smolagents",
+    "status": "active",
+    "url": "https://github.com/huggingface/smolagents",
+    "vendor": "Hugging Face",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Typed agent loop from Pydantic: typed end-to-end inputs/outputs/tools, Pydantic Graph typed graph control flow, and durable execution via Temporal/DBOS/Prefect.",
+    "features": [
+      "Typed agent loop with typed inputs, outputs, and tools (per repo README)",
+      "Pydantic Graph: typed graph control flow (per repo README)",
+      "Harness adds sub-agents, planning, memory, context management, persistence (per repo README)",
+      "Durable execution integrates with Temporal plus DBOS/Prefect (per repo README)",
+      "OpenTelemetry/Logfire observability (per repo README)"
+    ],
+    "name": "PydanticAI",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/pydantic/pydantic-ai",
+    "status": "active",
+    "url": "https://github.com/pydantic/pydantic-ai",
+    "vendor": "Pydantic",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "deepset's open-source AI orchestration framework for production-ready AI agents, RAG, and multimodal search: modular components + pipelines.",
+    "features": [
+      "Modular foundation: reusable components + pipelines, Document Stores, Agents, Tools, many integrations (per official docs)",
+      "Model-agnostic: OpenAI, Google, Anthropic, Hugging Face Transformers (per official docs)",
+      "Loop-based Agent component with tool selection, schema-validated runtime state, streaming, exit conditions (per official docs)",
+      "Commercial: Haystack Enterprise Starter and Enterprise Platform (per official docs)",
+      "Apache 2.0 (per official docs)"
+    ],
+    "name": "Haystack",
+    "orchestration_verified": true,
+    "source_url": "https://docs.haystack.deepset.ai",
+    "status": "active",
+    "url": "https://docs.haystack.deepset.ai",
+    "vendor": "deepset",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Linux-Foundation-hosted framework for production-grade multi-agent systems: rule-based governance, dynamic workflows, YAML declarative orchestration, MCP/A2A native.",
+    "features": [
+      "Hosted by the Linux Foundation under open governance (donated by IBM) (per repo docs)",
+      "Python and TypeScript with feature parity (per repo docs)",
+      "Constraint enforcement and rule-based governance: deterministic rules instead of suggesting behavior (per repo docs)",
+      "Dynamic workflows (parallelism, retries, replanning decorators); declarative orchestration in YAML (per repo docs)",
+      "OpenTelemetry observability; MCP and A2A native; provider-agnostic (per repo docs)"
+    ],
+    "name": "BeeAI Framework",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/i-am-bee/beeai-framework",
+    "status": "active",
+    "url": "https://github.com/i-am-bee/beeai-framework",
+    "vendor": "Linux Foundation",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Production-grade resilient agent framework on Dapr (CNCF): durable workflow engine, virtual actors, pub/sub coordination, MCP auto-discovery.",
+    "features": [
+      "Durable workflow engine retries failures and recovers from last persisted state (per repo README)",
+      "Dapr Workflow + virtual actors: idle agents reclaimable while retaining state (per repo README)",
+      "Service invocation, pub/sub coordination, key-value state, sequential actor message processing, contextual memory (per repo README)",
+      "Multi-agent comms, structured output, MCP auto-discovery (per repo README)",
+      "Python, Apache-2.0 (per repo README)"
+    ],
+    "name": "Dapr Agents",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/dapr/dapr-agents",
+    "status": "active",
+    "url": "https://github.com/dapr/dapr-agents",
+    "vendor": "Dapr (CNCF)",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Models a software company: PM, architect, project manager, and engineer agents coordinated via Standardized Operating Procedures (\"Code = SOP(Team)\").",
+    "features": [
+      "One-line requirement produces user stories, requirements, data structures, APIs, documents, and a full repository (per repo README)",
+      "SOPs combat cascading hallucinations from naively chaining LLMs (per paper abstract)",
+      "Assembly-line paradigm with diverse roles; agents verify intermediate results (per repo README)",
+      "Old geekan/MetaGPT URLs still appear in README install examples (per repo README)",
+      "MIT (per repo README)"
+    ],
+    "name": "MetaGPT",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/FoundationAgents/MetaGPT",
+    "status": "active",
+    "url": "https://github.com/FoundationAgents/MetaGPT",
+    "vendor": "FoundationAgents",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Research-oriented multi-agent/society framework: role-playing, workforce orchestration, dynamic communication, and stateful memory.",
+    "features": [
+      "Role-playing, workforce orchestration, RAG pipelines, task automation, world simulation (per repo README)",
+      "Dynamic communication and stateful memory (per repo README)",
+      "Modules: agent societies, memory, persistent storage, interpreters, retrieval, runtime, human-in-the-loop (per repo README)",
+      "Apache-2.0 (per repo README)"
+    ],
+    "name": "CAMEL",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/camel-ai/camel",
+    "status": "active",
+    "url": "https://github.com/camel-ai/camel",
+    "vendor": "CAMEL-AI community",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "LlamaIndex's event-driven orchestration component: typed @step functions with async branching, loops, fan-out/fan-in, and serializable Context state.",
+    "features": [
+      "Workflows expressed as typed @step functions (per official-docs search snippets)",
+      "Async branching, loops, and fan-out/fan-in (per official-docs search snippets)",
+      "AgentWorkflow provides agent handoffs (per official-docs search snippets)",
+      "Serializable Context carries state, with optional step checkpointing (per official-docs search snippets)",
+      "Human-in-the-loop support documented (per official-docs search snippets)"
+    ],
+    "name": "LlamaIndex Workflows",
+    "orchestration_verified": false,
+    "source_url": "",
+    "status": "active",
+    "url": "https://developers.llamaindex.ai/python/framework/understanding/workflows/",
+    "vendor": "LlamaIndex",
+    "verified_date": "",
+    "notes": "Official docs fetch was rate-limited; only official-result snippets were read. Official-page fetch was rate-limited or returned no readable content; facts rest on search-result snippets only. Marked unverified per house rule — do not cite as confirmed."
+  },
+  {
+    "category": "framework",
+    "description": "TypeScript framework for AI agents and applications: explicit step-based workflows with typed schemas, suspension/resumption, and time-travel step replay.",
+    "features": [
+      "Workflows: createStep/createWorkflow, .then()/.commit(), typed I/O schemas (Zod/Valibot/ArkType) (per official docs)",
+      "Control flow, nested workflows, suspension/resumption, streaming, time-travel step replay (per official docs)",
+      "Managed workflow runners available (e.g. Inngest); steps call agents or tools directly (per official docs)",
+      "Integrations: Next.js, React+Vite, Astro, Express, Hono, SvelteKit; Studio interactive UI (per official docs)",
+      "Commercial Mastra Cloud/Factory alongside OSS (per official docs)"
+    ],
+    "name": "Mastra",
+    "orchestration_verified": true,
+    "source_url": "https://mastra.ai/docs",
+    "status": "active",
+    "url": "https://mastra.ai/docs",
+    "vendor": "Mastra",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "TypeScript AI Agent Engineering Platform: open-source Core Framework (memory, RAG, guardrails, tools, MCP, voice, workflow) plus VoltOps Console.",
+    "features": [
+      "Core: Memory, RAG, Guardrails, Tools, MCP, Voice, Workflow (per official site)",
+      "VoltOps Console: observability, automation, deployment, evals, guardrails, prompts — cloud or self-hosted (per official site)",
+      "Persistent memory, unified multi-provider API, 40+ app integrations (per official site)",
+      "Open-source core + commercial console (per official site)"
+    ],
+    "name": "VoltAgent",
+    "orchestration_verified": true,
+    "source_url": "https://voltagent.dev",
+    "status": "active",
+    "url": "https://voltagent.dev",
+    "vendor": "VoltAgent",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Microsoft's code-first agent framework for planning and executing data-analytics tasks: converts requests into verified, self-repairing code.",
+    "features": [
+      "Converts requests into code snippets and coordinates function-style plugins (per official docs)",
+      "Stateful conversations preserve in-memory Python data across rounds (per official docs)",
+      "Generated-code verification/automatic repair, sandbox execution, session isolation (per official docs)",
+      "Custom roles with Planner; OpenTelemetry logs, metrics, traces (per official docs)"
+    ],
+    "name": "TaskWeaver",
+    "orchestration_verified": true,
+    "source_url": "https://microsoft.github.io/TaskWeaver/docs/overview",
+    "status": "active",
+    "url": "https://microsoft.github.io/TaskWeaver/docs/overview",
+    "vendor": "Microsoft",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Open-source stack spanning agent development, evaluation, hosting, memory, and fine-tuning; multi-agent collaboration with retries/fallbacks and tool boundaries.",
+    "features": [
+      "AgentScope 2.0: multi-model calls, retries/fallbacks, permission/tool boundaries, Workspace, context, Agent Service (per official site)",
+      "JVM framework supports reasoning, tools, memory, multi-agent collaboration (per official site)",
+      "ReMe: persistent file/vector memory across sessions (per official site)",
+      "Active ecosystem of current projects (per official site)"
+    ],
+    "name": "AgentScope",
+    "orchestration_verified": true,
+    "source_url": "https://agentscope.io",
+    "status": "active",
+    "url": "https://agentscope.io",
+    "vendor": "AgentScope project",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Open-source agent framework from the Qwen team built around Qwen instruction following, tool use, planning, and memory.",
+    "features": [
+      "Built around Qwen instruction following, tool use, planning, and memory (per official docs)",
+      "Docs cover installation, capabilities, core modules, developer guide, planning benchmarks (per official docs)",
+      "Docs last updated March 4, 2026 (per official docs)",
+      "Python, open source (per official docs)"
+    ],
+    "name": "Qwen-Agent",
+    "orchestration_verified": true,
+    "source_url": "https://qwenlm.github.io/Qwen-Agent/en/",
+    "status": "active",
+    "url": "https://qwenlm.github.io/Qwen-Agent/en/",
+    "vendor": "Qwen team / Alibaba",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "\"Hire a 24/7 AI Workforce\": five-layer agent stack (Prompt → Context → Harness → Loop → Graph) with graph topologies expressible in YAML.",
+    "features": [
+      "Context layer: persistent memory (user_id), knowledge retrieval, compaction, handoff ContextPolicy (per repo README)",
+      "Harness layer: tools, MCP servers, guardrails, approval human gates, hooks, sandboxes (per repo README)",
+      "Loop layer: ExecutionConfig iteration/budget caps, autonomy mode, on-by-default doom-loop detection (per repo README)",
+      "Graph layer: AgentFlow route()/parallel()/loop()/repeat() topologies, expressible in YAML with no Python (per repo README)",
+      "JS SDK, CLI, Langfuse tracing; 100+ LLMs; MIT (per repo README)"
+    ],
+    "name": "PraisonAI",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/MervinPraison/PraisonAI",
+    "status": "active",
+    "url": "https://github.com/MervinPraison/PraisonAI",
+    "vendor": "Mervin Praison",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Dev-first open-source autonomous AI agent framework: provision/spawn/deploy agents with toolkits marketplace, GUI, action console, and agent memory.",
+    "features": [
+      "Provision, spawn, and deploy autonomous agents (per repo README)",
+      "Toolkits/marketplace, GUI, action console, multiple vector DBs, performance telemetry (per repo README)",
+      "Agent memory storage; ReAct predefined workflows (per repo README)",
+      "Local Docker, DigitalOcean one-click, SuperAGI Cloud deployment (per repo README)",
+      "MIT; repo not archived; README carries an 'Under Development!' note (per repo metadata)"
+    ],
+    "name": "SuperAGI",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/TransformerOptimus/SuperAGI",
+    "status": "active",
+    "url": "https://github.com/TransformerOptimus/SuperAGI",
+    "vendor": "TransformerOptimus",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Builds on the OpenAI Agents SDK for collaborative swarms: declared directed communication flows and organizational role structures.",
+    "features": [
+      "Leverages/extends the OpenAI Agents SDK for collaborative swarms (per README search snippets)",
+      "Organizes automation around organizational structures (agencies, CEO/developer/assistant roles) (per README search snippets)",
+      "Declared directed communication flows: agents only communicate with explicitly connected agents; claims system restricts handoff recipients (per README search snippets)",
+      "Shared instructions propagated to every agent automatically (per README search snippets)",
+      "Docs at agency-swarm.ai; pip package agency-swarm (per README search snippets)"
+    ],
+    "name": "Agency Swarm",
+    "orchestration_verified": false,
+    "source_url": "",
+    "status": "active",
+    "url": "https://github.com/VRSEN/agency-swarm",
+    "vendor": "Arsenii Shatokhin (VRSEN)",
+    "verified_date": "",
+    "notes": "README fetch was rate-limited; only official-result snippets were read. Official-page fetch was rate-limited or returned no readable content; facts rest on search-result snippets only. Marked unverified per house rule — do not cite as confirmed."
+  },
+  {
+    "category": "framework",
+    "description": "Formerly AWS Labs' multi-agent-orchestrator, now maintained by 2FastLabs: intent-classified routing across specialist agents with supervisor/worker patterns.",
+    "features": [
+      "Moved from awslabs/multi-agent-orchestrator to 2fastlabs/agent-squad — no longer an AWS Labs offering (per repo README)",
+      "Intelligent intent classification routes queries to specialist agents; context management across agents and sessions (per repo README)",
+      "Three runtimes: Python 3.11+, TypeScript, Swift on-device (iOS 16+/macOS 14+) (per repo README)",
+      "SupervisorAgent (team coordination, parallel sub-agents, agent-as-tools); GroundedAgent (gatherer/presenter anti-hallucination); JevClassifier (typed decision routing via TypeSafe Jev) (per repo README)",
+      "Prebuilt Bedrock/Anthropic/OpenAI/Lex/Lambda agents; Apache-2.0 (per repo README)"
+    ],
+    "name": "Agent Squad",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/2fastlabs/agent-squad",
+    "status": "active",
+    "url": "https://github.com/2fastlabs/agent-squad",
+    "vendor": "2FastLabs",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "framework",
+    "description": "Formerly Meta's Llama Stack, now the independent OGX project: open-source agentic API server with server-side orchestration via a Responses API.",
+    "features": [
+      "Llama Stack renamed to OGX with an independent mission: model-agnostic, multi-SDK, production-grade (per repo)",
+      "Responses API: server-side agentic orchestration with tool calling, MCP server integration, built-in file search (RAG) in one API call (per repo)",
+      "No longer Meta's project — independent (per repo redirect)",
+      "Companion examples repo meta-llama/llama-agentic-system is archived (per GitHub metadata)"
+    ],
+    "name": "OGX (formerly Meta's Llama Stack)",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/ogx-ai/ogx",
+    "status": "active",
+    "url": "https://github.com/ogx-ai/ogx",
+    "vendor": "OGX (independent)",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29. There is no product called 'Meta Agentic Orchestration'; Llama Stack is now the independent OGX project."
+  },
+  {
+    "category": "framework",
+    "description": "Low-code interface for rapidly prototyping AutoGen agent teams: visual team builder, interactive playground, and export to Python/endpoints/Docker.",
+    "features": [
+      "Team Builder: visual agent-team creation via JSON spec or drag-and-drop, compatible with AgentChat components (per official docs)",
+      "Playground: interactive testing, live message streaming, pause/stop (per official docs)",
+      "Gallery of community components; Deployment exports teams to Python, endpoints, Docker (per official docs)",
+      "Official caution: 'not meant to be a production-ready app'; research prototype (per official docs)",
+      "Code lives in microsoft/autogen at python/packages/autogen-studio (per official docs)"
+    ],
+    "name": "AutoGen Studio",
+    "orchestration_verified": true,
+    "source_url": "https://microsoft.github.io/autogen/dev/user-guide/autogenstudio-user-guide/index.html",
+    "status": "maintenance",
+    "url": "https://microsoft.github.io/autogen/dev/user-guide/autogenstudio-user-guide/index.html",
+    "vendor": "Microsoft",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "protocol",
+    "description": "Open protocol for agent-to-agent communication: agent discovery via Agent Cards, a task lifecycle state machine, and three equivalent transports.",
+    "features": [
+      "Originally developed by Google, donated to the Linux Foundation; TSC incl. AWS, Cisco, Google, IBM Research, Microsoft, Salesforce, SAP, ServiceNow (per a2a-protocol.org)",
+      "Agent Card: JSON discovery document at /.well-known/agent-card.json (per spec)",
+      "Task lifecycle FSM: SUBMITTED → WORKING → COMPLETED | FAILED | CANCELED | REJECTED, plus INPUT_REQUIRED / AUTH_REQUIRED; outputs in Artifacts; multi-turn via contextId (per spec)",
+      "Transports: JSON-RPC 2.0 over HTTP (+SSE), gRPC, REST; version via A2A-Version header (per spec)",
+      "v1.0 era; adopted in Azure AI Foundry, Copilot Studio, Bedrock AgentCore, Google Cloud (per sibling repo research); 'MCP is for agent-to-tool; A2A is for agent-to-agent — complementary' (per a2a-protocol.org)"
+    ],
+    "name": "A2A (Agent2Agent Protocol)",
+    "orchestration_verified": true,
+    "source_url": "https://a2a-protocol.org/latest/",
+    "status": "active",
+    "url": "https://a2a-protocol.org/latest/",
+    "vendor": "Linux Foundation (Google)",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass. A2A v1.0 under the Linux Foundation (2026-03) confirmed in sibling research."
+  },
+  {
+    "category": "protocol",
+    "description": "Open standard for the agent↔tool layer: Hosts, Clients, and Servers exposing Tools, Resources, and Prompts over JSON-RPC.",
+    "features": [
+      "Announced by Anthropic Nov 2024; now under the Agentic AI Foundation (Linux Foundation) (per sibling repo research)",
+      "Three actors: Host → Client → Server; servers expose Tools, Resources, Prompts (per modelcontextprotocol.io)",
+      "JSON-RPC 2.0 over stdio (local) or Streamable HTTP (OAuth 2.1); 2026-07-28 spec: stateless redesign (per sibling repo research)",
+      "Orchestration role: agent↔tool layer, not agent↔agent — confirmed on the official A2A page (per a2a-protocol.org)",
+      "'USB-C for AI applications' (per modelcontextprotocol.io)"
+    ],
+    "name": "MCP (Model Context Protocol)",
+    "orchestration_verified": true,
+    "source_url": "https://modelcontextprotocol.io",
+    "status": "active",
+    "url": "https://modelcontextprotocol.io",
+    "vendor": "Agentic AI Foundation (Anthropic)",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass. 2026-07-28 spec (stateless redesign) under the Agentic AI Foundation confirmed in sibling research."
+  },
+  {
+    "category": "protocol",
+    "description": "IBM's open REST/HTTP (OpenAPI 3.1) agent-serving protocol: Agents as services with Runs, streaming, Await pause/resume, and audit-trail metadata.",
+    "features": [
+      "Created by IBM as part of the BeeAI project, contributed to Linux Foundation AI & Data (per IBM page, search snippets)",
+      "ACP client → server; Message/MessagePart multimodal content; Run = single agent task (sync/async/streaming); Await for pause/resume; Agent Manifest discovery (per search snippets)",
+      "TrajectoryMetadata audit trail of reasoning steps/tool calls per response (per search snippets)",
+      "Repo archived Aug 2025; merged into A2A under Linux Foundation ~Sept 2025 (per search snippets)",
+      "Name collision: unrelated Zed 'Agent Client Protocol' (agentclientprotocol.com) is a different project (per search snippets)"
+    ],
+    "name": "ACP (Agent Communication Protocol)",
+    "orchestration_verified": false,
+    "source_url": "",
+    "status": "archived",
+    "url": "https://github.com/i-am-bee/acp",
+    "vendor": "IBM / BeeAI",
+    "verified_date": "",
+    "notes": "Archived by its stewards and merged into A2A (~Sept 2025). Official-page fetch was rate-limited or returned no readable content; facts rest on search-result snippets only. Marked unverified per house rule — do not cite as confirmed."
+  },
+  {
+    "category": "protocol",
+    "description": "Cisco Outshift's open-source \"Internet of Agents\" collective (now Linux Foundation): schema framework, agent directory, and secure messaging designed to work alongside A2A/MCP.",
+    "features": [
+      "Initiated by Cisco's Outshift; now under the Linux Foundation (per announcement, search snippets)",
+      "Infrastructure stack: OASF (Open Agentic Schema Framework), Agent Directory (DIR), SLIM transport (MLS), Identity spec (per search snippets)",
+      "SDKs in Python, JS, Go, Rust (per search snippets)",
+      "Designed to work alongside A2A and MCP rather than replace them (per search snippets)",
+      "Initial maintainers: Cisco, LangChain, Galileo (per announcement, search snippets)"
+    ],
+    "name": "AGNTCY",
+    "orchestration_verified": false,
+    "source_url": "",
+    "status": "active",
+    "url": "https://outshift.cisco.com/blog/building-the-internet-of-agents-introducing-the-agntcy",
+    "vendor": "Cisco Outshift / Linux Foundation",
+    "verified_date": "",
+    "notes": "Official-page fetch was rate-limited or returned no readable content; facts rest on search-result snippets only. Marked unverified per house rule — do not cite as confirmed. Cisco Outshift 'Internet of Agents' collective; snippet-level only."
+  },
+  {
+    "category": "protocol",
+    "description": "Community protocol suite for agent identity, naming, discovery, negotiation, and collaboration on the open internet; did:wba identity over HTTPS.",
+    "features": [
+      "Organized as a layered protocol suite (per agent-network-protocol.com)",
+      "Signature identity: did:wba (Web-Based Agent DID), W3C-DID-compatible, resolving over plain HTTPS (per official site)",
+      "End-to-end encrypted messaging (per official site)",
+      "Layers: identity/communication → application protocols (Agent Description, Discovery, payment/commerce) (per official site)",
+      "Reference SDK 'AgentConnect' at github.com/agent-network-protocol/anp (per search snippets)"
+    ],
+    "name": "ANP (Agent Network Protocol)",
+    "orchestration_verified": true,
+    "source_url": "https://agent-network-protocol.com/",
+    "status": "active",
+    "url": "https://agent-network-protocol.com/",
+    "vendor": "open spec (community)",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "protocol",
+    "description": "Framework-agnostic REST/OpenAPI spec for serving LLM agents in production: Runs, Threads (multi-turn state), and a Store (long-term memory API).",
+    "features": [
+      "Three core concepts: Runs (executions), Threads (multi-turn state), Store (long-term memory API), plus Agents introspection (per repo README)",
+      "Thread history with append-only revisions; run lifecycle (create/wait/stream/cancel/delete); store CRUD+search (per repo README)",
+      "SSE/WebSocket streaming with replay and HITL (per repo README)",
+      "Python server stubs (Pydantic V2/FastAPI); TS/Python bindings; LangGraph Platform implements a superset (per repo README)",
+      "Scope: serving/runtime API (client→agent), not agent↔agent peer protocol (per repo README); MIT"
+    ],
+    "name": "Agent Protocol (LangChain)",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/langchain-ai/agent-protocol",
+    "status": "active",
+    "url": "https://github.com/langchain-ai/agent-protocol",
+    "vendor": "LangChain",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "protocol",
+    "description": "Open protocol for the 'Agent Economy': cryptographically proves a user authorized an agent's purchase via Verifiable Digital Credentials.",
+    "features": [
+      "Trust primitive: Verifiable Digital Credentials — tamper-evident signed mandates (per ap2-protocol.org)",
+      "v0.2: Checkout Mandate + Payment Mandate (open/closed stages), SD-JWT format; human-present and 'Human Not Present' flows (per ap2-protocol.org)",
+      "Announced by Google Sept 2025 (60–100+ partners); donated to the FIDO Alliance April 28, 2026; two FIDO TWGs continue standardization (per ap2-protocol.org)",
+      "Payment-rail-agnostic: authorizes rather than settles; roadmap incl. real-time transfers and digital currencies (per ap2-protocol.org)",
+      "Repo: github.com/google-agentic-commerce/AP2 (per search snippets)"
+    ],
+    "name": "AP2 (Agent Payments Protocol)",
+    "orchestration_verified": true,
+    "source_url": "https://ap2-protocol.org/",
+    "status": "active",
+    "url": "https://ap2-protocol.org/",
+    "vendor": "FIDO Alliance (Google)",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "protocol",
+    "description": "NEAR AI's open protocol for cross-trust-boundary agent interaction: agents communicate over Chat Threads with extensible Capabilities.",
+    "features": [
+      "Agents communicate over Chat Threads, largely compatible with the OpenAI Assistants/Threads format (per sibling repo research)",
+      "Extensible Capabilities for structured interaction (per sibling repo research)",
+      "Designed for cross-trust-boundary interaction (per sibling repo research)"
+    ],
+    "name": "AITP (Agent Interaction & Transaction Protocol)",
+    "orchestration_verified": true,
+    "source_url": "https://aitp.dev",
+    "status": "active",
+    "url": "https://aitp.dev",
+    "vendor": "NEAR AI",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass."
+  },
+  {
+    "category": "protocol",
+    "description": "Research meta-protocol (Oxford + Eigent AI) addressing the 'Agent Communication Trilemma': standardized routines for frequent exchanges, natural language for rare ones.",
+    "features": [
+      "'A Scalable Communication Protocol for Networks of Large Language Models' (Marro et al., Oct 2024) (per arXiv)",
+      "Meta-protocol: agents negotiate the protocol itself via exchangeable Protocol Documents (per arXiv abstract)",
+      "Academic proposal, not an adopted industry standard; compared alongside A2A/ACP/ANP in the 2025 ProtocolBench paper (per search snippets)"
+    ],
+    "name": "Agora Protocol",
+    "orchestration_verified": false,
+    "source_url": "",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2410.11905",
+    "vendor": "University of Oxford + Eigent AI",
+    "verified_date": "",
+    "notes": "Official-page fetch was rate-limited or returned no readable content; facts rest on search-result snippets only. Marked unverified per house rule — do not cite as confirmed. Academic meta-protocol proposal (arXiv:2410.11905); no industry adoption."
+  },
+  {
+    "category": "memory",
+    "description": "Open-source memory layer between app and LLM: extracts salient facts from conversations, stores them retrieval-ready, and injects relevant context into future queries.",
+    "features": [
+      "Two-phase add(): LLM extraction → reconciliation (ADD/UPDATE/DELETE/NOOP) against existing memories (per repo README)",
+      "CRUD+search API; scoped by user_id / agent_id / run_id (per repo README)",
+      "20–30 vector-store backends (Qdrant default); optional graph memory (Neo4j/Memgraph/Kuzu) (per repo README)",
+      "April 2026 change: single-pass ADD-only extraction, entity linking, multi-signal retrieval, temporal reasoning; claimed LoCoMo 92.5, LongMemEval 94.4 (per repo README — first-party claim)",
+      "Apache-2.0; ~66K stars, not archived (per GitHub metadata)"
+    ],
+    "name": "Mem0",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/mem0ai/mem0",
+    "status": "active",
+    "url": "https://github.com/mem0ai/mem0",
+    "vendor": "Mem0",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "memory",
+    "description": "Open-source (Apache-2.0) temporal knowledge-graph framework behind Zep: bi-temporal fact edges with automatic contradiction invalidation and hybrid retrieval.",
+    "features": [
+      "Bi-temporal knowledge graph: every fact edge carries validity windows (t_valid/t_invalid + transaction time) (per repo README)",
+      "Contradictions auto-invalidate old edges — history preserved, not deleted (per repo README)",
+      "Entities + episodes (raw-data provenance) + communities; hybrid retrieval (semantic + BM25 + graph traversal) (per repo README)",
+      "Paper: 'Zep: A Temporal Knowledge Graph Architecture for Agent Memory' (arXiv:2501.13956) (per search snippets)",
+      "~31K stars, not archived (per GitHub metadata)"
+    ],
+    "name": "Graphiti",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/getzep/graphiti",
+    "status": "active",
+    "url": "https://github.com/getzep/graphiti",
+    "vendor": "Zep",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "memory",
+    "description": "Managed 'unified context layer' for agents: governed, policy-filtered retrieval over a Context Graph, built on the open-source Graphiti engine.",
+    "features": [
+      "Context Graph per user/customer/agent/domain with governed, policy-filtered retrieval under 200ms (per getzep.com)",
+      "Built on Graphiti, Zep's open-source temporal knowledge-graph framework (per getzep.com)",
+      "Zep Cloud runs a proprietary Context Graph Engine (no third-party graph DB needed for managed) (per repo README)",
+      "Zep Community Edition deprecated April 2025; OSS effort concentrated on Graphiti (per search snippets)"
+    ],
+    "name": "Zep",
+    "orchestration_verified": true,
+    "source_url": "https://www.getzep.com",
+    "status": "commercial",
+    "url": "https://www.getzep.com",
+    "vendor": "Zep",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "memory",
+    "description": "Stateful agents from the creators of MemGPT: hierarchical memory with self-editing in-context memory blocks plus archival storage, served over a persistent REST API.",
+    "features": [
+      "Founded by the creators of MemGPT (UC Berkeley Sky Computing Lab); 'Letta is the continuation of MemGPT' (per letta.com)",
+      "Hierarchical memory: in-context working memory ('memory blocks': labeled, self-editing prompt sections) + archival vector storage (per search snippets)",
+      "Agent manages its own context window, paging memories in/out (per search snippets)",
+      "Sleep-time background agents that refine memory offline; Agent File (.af) open format (per search snippets)",
+      "Shared memory blocks across agents; model-agnostic (per search snippets)"
+    ],
+    "name": "Letta",
+    "orchestration_verified": false,
+    "source_url": "",
+    "status": "active",
+    "url": "https://letta.com",
+    "vendor": "Letta",
+    "verified_date": "",
+    "notes": "Lineage (ex-MemGPT) verified; technical details from snippets only. Official-page fetch was rate-limited or returned no readable content; facts rest on search-result snippets only. Marked unverified per house rule — do not cite as confirmed."
+  },
+  {
+    "category": "memory",
+    "description": "Agent-native memory infrastructure: LLM/datastore/framework-agnostic layer turning agent execution + conversation into structured persistent state.",
+    "features": [
+      "Python (pip install memori) and TypeScript SDKs (per repo README)",
+      "LLM client-wrapping: register an OpenAI/Anthropic client; conversations persisted and recalled automatically in background (per repo README)",
+      "Memory levels: entity → process → session; Advanced Augmentation enriches with attributes, events, facts, people, preferences, relationships, rules, skills (per repo README)",
+      "Integrations: MCP server, OpenClaw plugin, Hermes memory provider; BYODB; Memori Cloud (per repo README)",
+      "~17K stars, not archived; license ambiguous (GitHub NOASSERTION vs README Apache-2.0 claim) (per GitHub metadata)"
+    ],
+    "name": "Memori",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/MemoriLabs/Memori",
+    "status": "active",
+    "url": "https://github.com/MemoriLabs/Memori",
+    "vendor": "Memori Labs",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29. License caveat: GitHub reports NOASSERTION while the README claims Apache-2.0 — verify before depending on it."
+  },
+  {
+    "category": "memory",
+    "description": "Memory and continual learning for agents: a learner model distills user/task/tenant context into a vector-graph memory DB, injected in real time into any harness.",
+    "features": [
+      "learner-1 model extracts/dreams on context into a vector-graph memory DB, injected into agent context in real time (per supermemory.ai)",
+      "'Any model, any harness' (per supermemory.ai)",
+      "Building blocks: Memory, User Profiles (~50ms), hybrid RAG+memory search, connectors (Drive, Gmail, Notion, OneDrive, GitHub), multimodal extractors, evals (per search snippets)",
+      "Claims #1 on LongMemEval, LoCoMo, ConvoMem (first-party, unverified) (per search snippets)",
+      "Repo: github.com/supermemoryai/supermemory, MIT, ~29K stars (per search snippets)"
+    ],
+    "name": "Supermemory",
+    "orchestration_verified": true,
+    "source_url": "https://supermemory.ai/",
+    "status": "commercial",
+    "url": "https://supermemory.ai/",
+    "vendor": "Supermemory",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "memory",
+    "description": "mem0's local-first MCP application exposing one shared memory layer as an MCP server, so any MCP-compatible client reads/writes cross-app memory.",
+    "features": [
+      "Local-first MCP application by the mem0 team (April 2026) (per search snippets)",
+      "Memory as an MCP server: Claude Desktop/Code, Cursor, Windsurf, ChatGPT share one memory layer — cross-app portability (per search snippets)",
+      "FastAPI backend, Qdrant vector store, Alembic migrations, Next.js/Tailwind UI (per search snippets)",
+      "MCP tools: add_memories, search_memory, list_memories, delete_memories (per search snippets)",
+      "Hosted zero-setup tier at app.openmemory.dev ('powered by Mem0') (per search snippets)"
+    ],
+    "name": "OpenMemory",
+    "orchestration_verified": false,
+    "source_url": "",
+    "status": "active",
+    "url": "https://github.com/mem0ai/mem0",
+    "vendor": "Mem0",
+    "verified_date": "",
+    "notes": "Official-page fetch was rate-limited or returned no readable content; facts rest on search-result snippets only. Marked unverified per house rule — do not cite as confirmed. Note: several unrelated projects share the 'OpenMemory' name; this record covers mem0's MCP application."
+  },
+  {
+    "category": "memory",
+    "description": "LangChain's official long-term memory SDK for LangGraph agents: extracts and consolidates semantic, episodic, and procedural memories.",
+    "features": [
+      "Extracts and consolidates semantic, episodic, and procedural memories (per sibling repo research)",
+      "Self-improving system-prompt optimization (per sibling repo research)",
+      "Backed by LangGraph checkpointing (per sibling repo research)"
+    ],
+    "name": "LangMem",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/langchain-ai/langmem",
+    "status": "active",
+    "url": "https://github.com/langchain-ai/langmem",
+    "vendor": "LangChain",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass."
+  },
+  {
+    "category": "memory",
+    "description": "Open-source memory control plane for agents: an Extract-Cognify-Load pipeline builds a self-hosted typed knowledge graph so agents share persistent knowledge.",
+    "features": [
+      "Extract-Cognify-Load pipeline (per sibling repo research)",
+      "Self-hosted typed knowledge graph (Kuzu/LanceDB/SQLite) plus vector + relational stores (per sibling repo research)",
+      "Agents share persistent knowledge across runs (per sibling repo research)"
+    ],
+    "name": "Cognee",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/topoteretes/cognee",
+    "status": "active",
+    "url": "https://github.com/topoteretes/cognee",
+    "vendor": "Topoteretes",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass."
+  },
+  {
+    "category": "memory",
+    "description": "Redis's managed memory layer for AI agents (part of Redis Iris, their real-time context engine): session memory with TTL plus background promotion of extracted facts.",
+    "features": [
+      "Two-tier model: session memory (configurable TTL) + background promotion of extracted facts to long-term store (per sibling repo research)",
+      "Part of Redis Iris, Redis's real-time context engine (per sibling repo research)",
+      "Managed tier available (per sibling repo research)"
+    ],
+    "name": "Redis Agent Memory",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/redis/agent-memory-server",
+    "status": "commercial",
+    "url": "https://github.com/redis/agent-memory-server",
+    "vendor": "Redis",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass."
+  },
+  {
+    "category": "platform",
+    "description": "Managed supervisor pattern on AWS: designate one Bedrock Agent as supervisor and associate collaborator sub-agents that plan, split tasks, work in parallel, and hand off.",
+    "features": [
+      "Built-in multi-agent collaboration (per sibling repo research)",
+      "Supervisor agent coordinates specialized collaborator agents (per AWS docs, search snippets)",
+      "Complex workflows delegated to collaborators; results consolidated by the supervisor (per AWS docs, search snippets)"
+    ],
+    "name": "Amazon Bedrock Agents",
+    "orchestration_verified": true,
+    "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-multi-agent-collaboration.html",
+    "status": "commercial",
+    "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-multi-agent-collaboration.html",
+    "vendor": "AWS",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass."
+  },
+  {
+    "category": "platform",
+    "description": "AWS's managed harness for deploying agents: define an agent with a model, system prompt, and tools and run immediately — each session gets its own microVM with filesystem persistence.",
+    "features": [
+      "Managed harness manages the full agent loop (reasoning, tool selection, action execution, response streaming) (per AWS what's-new)",
+      "Each session gets its own microVM with filesystem and shell access; filesystem persistence lets agents suspend mid-task and resume (per AWS what's-new)",
+      "AgentCore CLI deploys with infrastructure-as-code governance and auditability (AWS CDK supported, Terraform coming) (per AWS what's-new)",
+      "Evaluation and memory capabilities can be added as a prototype evolves (per AWS what's-new)",
+      "Managed harness preview in four AWS Regions: US West (Oregon), US East (N. Virginia), Europe (Frankfurt), APAC (Sydney) (per AWS what's-new)"
+    ],
+    "name": "Amazon Bedrock AgentCore",
+    "orchestration_verified": true,
+    "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/04/agentcore-new-features-to-build-agents-faster/",
+    "status": "commercial",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/agentcore-new-features-to-build-agents-faster/",
+    "vendor": "AWS",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "platform",
+    "description": "Google's managed agent runtime (Vertex AI Agent Engine rebranded) for deploying ADK multi-agent orchestrations as a service.",
+    "features": [
+      "Deploys ADK multi-agent orchestrations — sub_agents, AgentTool, graph workflows — as a managed service (per sibling repo research)",
+      "Secure managed runtime with lifecycle and tool orchestration; includes memory bank, sessions, sandbox, observability (per Google Cloud docs, search snippets)",
+      "Vertex AI Agent Engine rebranded to Agent Runtime within this platform (per sibling repo research)"
+    ],
+    "name": "Gemini Enterprise Agent Platform",
+    "orchestration_verified": true,
+    "source_url": "https://google.github.io/adk-docs/",
+    "status": "commercial",
+    "url": "https://google.github.io/adk-docs/",
+    "vendor": "Google Cloud",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass."
+  },
+  {
+    "category": "platform",
+    "description": "Managed multi-agent orchestration in Microsoft Foundry (formerly Azure AI Foundry): visual/YAML workflows invoking multiple agents with versioning and tracing.",
+    "features": [
+      "Visual and SDK-based agent development; model, knowledge, tool, and thread primitives (per Microsoft docs, search snippets)",
+      "Workflows: Sequential, Group chat, Human-in-the-loop — invoking multiple Foundry agents with variables, versioning, tracing (per sibling repo research)",
+      "Supports complex autonomous multi-agent workflows (per Microsoft docs, search snippets)",
+      "Branding: formerly Azure AI Foundry Agent Service / Azure AI Agent Service (per sibling repo research)"
+    ],
+    "name": "Microsoft Foundry Agent Service",
+    "orchestration_verified": true,
+    "source_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/workflow",
+    "status": "commercial",
+    "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/workflow",
+    "vendor": "Microsoft",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass."
+  },
+  {
+    "category": "platform",
+    "description": "Salesforce's enterprise agent platform: a primary agent routes tasks to specialist secondary agents powered by the Atlas Reasoning Engine, with A2A support.",
+    "features": [
+      "Enterprise agent platform for building, deploying, managing AI agents; Atlas reasoning loop (per Salesforce, search snippets)",
+      "Primary agent routes to specialist secondary agents; Topics and actions routing/execution model (per sibling repo research)",
+      "A2A support for third-party agents; built-in observability (per sibling repo research)",
+      "Grounded in Salesforce CRM and Data Cloud; humans and agents collaborate through Slack (per Salesforce, search snippets)"
+    ],
+    "name": "Salesforce Agentforce",
+    "orchestration_verified": true,
+    "source_url": "https://www.salesforce.com/agentforce/multi-agent-orchestration/",
+    "status": "commercial",
+    "url": "https://www.salesforce.com/agentforce/multi-agent-orchestration/",
+    "vendor": "Salesforce",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass."
+  },
+  {
+    "category": "platform",
+    "description": "IBM's enterprise multi-agent collaboration platform: a supervisor/orchestrator routes work across skills (independent agents) with shared context/memory.",
+    "features": [
+      "Builds, deploys, orchestrates, manages, and governs AI agents (per IBM docs, search snippets)",
+      "Intent Parser + Flow Orchestrator route work across skills (independent agents) with shared context/memory store (per sibling repo research)",
+      "Cross-agent visibility with dependency and cost monitoring; traces and evaluates agent activity (per IBM docs, search snippets)",
+      "Supports agents built and run outside the platform (per IBM docs, search snippets)"
+    ],
+    "name": "IBM watsonx Orchestrate",
+    "orchestration_verified": true,
+    "source_url": "https://www.ibm.com/think/topics/multi-agent-collaboration",
+    "status": "commercial",
+    "url": "https://www.ibm.com/think/topics/multi-agent-collaboration",
+    "vendor": "IBM",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass."
+  },
+  {
+    "category": "platform",
+    "description": "Google's employee-facing governed AI platform (formerly Google Agentspace): enterprise data connectors, agents, and search/chat with centralized governance.",
+    "features": [
+      "Agentspace renamed to Gemini Enterprise (per Google, search snippets)",
+      "Employee-facing governed AI app — distinct from the developer-facing Gemini Enterprise Agent Platform (per search snippets)",
+      "Enterprise data connectors, agents, and search/chat; centralized governance (per search snippets)",
+      "Employee productivity-oriented rather than agent-runtime oriented (per search snippets)"
+    ],
+    "name": "Gemini Enterprise (formerly Google Agentspace)",
+    "orchestration_verified": false,
+    "source_url": "",
+    "status": "commercial",
+    "url": "https://cloud.google.com/geminienterprise",
+    "vendor": "Google Cloud",
+    "verified_date": "",
+    "notes": "Official-page fetch was rate-limited or returned no readable content; facts rest on search-result snippets only. Marked unverified per house rule — do not cite as confirmed. Distinct from the developer-facing Gemini Enterprise Agent Platform."
+  },
+  {
+    "category": "platform",
+    "description": "UiPath's agentic automation control plane: coordinates work across humans, agents, and systems with orchestration, execution, and governance layers.",
+    "features": [
+      "'Coordinates work across every actor (human, agent, or system)' under one governed control plane (per official UiPath page)",
+      "Three layers: Orchestration (Maestro Orchestrate with BPMN, Flow, Case), Execution, Governance (per official UiPath page)",
+      "Human judgment as a first-class workflow step (per official UiPath page)",
+      "Agent registry catalogs and governs third-party agents incl. Azure AI Foundry, AWS Bedrock, LangChain, CrewAI (per official UiPath page)",
+      "Durable execution: processes pause, resume, and recover without losing state (per official UiPath page)"
+    ],
+    "name": "UiPath Maestro",
+    "orchestration_verified": true,
+    "source_url": "https://www.uipath.com/platform/agentic-automation",
+    "status": "commercial",
+    "url": "https://www.uipath.com/platform/agentic-automation",
+    "vendor": "UiPath",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "platform",
+    "description": "CrewAI's managed enterprise suite: build crews in Crew Studio (visual/YAML), deploy to managed infrastructure, and access them through API endpoints.",
+    "features": [
+      "CrewAI AMP Suite: managed deployment, observability, governance, security, enterprise support (per CrewAI repo README)",
+      "Visual & YAML-based agent design: drag-and-drop workflows or human-readable YAML (per AWS Marketplace listing)",
+      "Deploy crews to managed infrastructure; access via API endpoints (per AWS Marketplace listing)",
+      "Plans meter executions, live crews, and seats (per AWS Marketplace listing)",
+      "Delivered as SaaS ('Deployed on AWS') sold by crewAI on AWS Marketplace (per AWS Marketplace listing)"
+    ],
+    "name": "CrewAI AMP",
+    "orchestration_verified": true,
+    "source_url": "https://www.crewai.com/enterprise",
+    "status": "commercial",
+    "url": "https://www.crewai.com/enterprise",
+    "vendor": "CrewAI Inc.",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "platform",
+    "description": "Stateful agents on Cloudflare Workers (Durable Objects) that can call and coordinate other agents via getAgentByName, with multi-agent worker/pipeline examples.",
+    "features": [
+      "Stateful agents on Cloudflare Workers built on Durable Objects (per sibling repo research)",
+      "Agents coordinate other agents via getAgentByName (per sibling repo research)",
+      "Official examples include multi-agent workers/pipeline patterns (per sibling repo research)"
+    ],
+    "name": "Cloudflare Agents",
+    "orchestration_verified": true,
+    "source_url": "https://developers.cloudflare.com/agents/",
+    "status": "commercial",
+    "url": "https://developers.cloudflare.com/agents/",
+    "vendor": "Cloudflare",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass."
+  },
+  {
+    "category": "platform",
+    "description": "LangChain's managed deployment for LangGraph multi-agent applications (renamed from LangGraph Platform, Oct 2025); the framework itself stays MIT open source.",
+    "features": [
+      "Managed deployment for LangGraph multi-agent applications (per sibling repo research)",
+      "Renamed from LangGraph Platform in Oct 2025 (per sibling repo research)",
+      "Framework stays MIT open source (per sibling repo research)"
+    ],
+    "name": "LangSmith Deployment",
+    "orchestration_verified": true,
+    "source_url": "https://docs.langchain.com/langsmith/deployment-quickstart",
+    "status": "commercial",
+    "url": "https://docs.langchain.com/langsmith/deployment-quickstart",
+    "vendor": "LangChain",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass."
+  },
+  {
+    "category": "platform",
+    "description": "Durable orchestrator for AI applications and agents: workflows-as-code that retain state for years, with automatic retries/self-healing and HITL approvals.",
+    "features": [
+      "Workflows-as-code coordinate distributed data stores and tools; state retained 'including years' (per temporal.io/solutions/ai)",
+      "Automatic retries/self-healing; human-in-the-loop approval (per temporal.io/solutions/ai)",
+      "Parallel tasks and concurrent workflows at high scale (per temporal.io/solutions/ai)",
+      "Official integrations: OpenAI Agents SDK, Pydantic AI, Google ADK, Mastra, Strands (per temporal.io/solutions/ai)",
+      "Use cases: long-running and HITL agents, MCP tools, inference/RAG, context engineering (per temporal.io/solutions/ai)"
+    ],
+    "name": "Temporal",
+    "orchestration_verified": true,
+    "source_url": "https://temporal.io/solutions/ai",
+    "status": "commercial",
+    "url": "https://temporal.io/solutions/ai",
+    "vendor": "Temporal Technologies",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "platform",
+    "description": "Durable functions for background jobs, agents, and event-driven workflows: multi-step orchestration checkpoints, waits, and fan-out across steps.",
+    "features": [
+      "Multi-step orchestration checkpoints, waits, and fans out across steps (per inngest.com)",
+      "Automatic retries, recovery, observability, queues, scheduling, cron, webhooks, events (per inngest.com)",
+      "Wait, fan-out, throttling, and flow control (per inngest.com)",
+      "Deploys alongside an existing app on serverless or traditional infrastructure (per inngest.com)",
+      "SSPL license — not OSI open source (per sibling repo research)"
+    ],
+    "name": "Inngest",
+    "orchestration_verified": true,
+    "source_url": "https://inngest.com/",
+    "status": "commercial",
+    "url": "https://inngest.com/",
+    "vendor": "Inngest",
+    "verified_date": "2026-09-29",
+    "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass. License caveat: SSPL, not OSI open source."
+  },
+  {
+    "category": "platform",
+    "description": "Open-source platform for durable AI agents and workflows in TypeScript: long-running tasks with retries, queues, observability, and elastic scaling.",
+    "features": [
+      "Agents survive refreshes, redeploys, and crashes (per trigger.dev)",
+      "Tool calling, human-in-the-loop, frontend streaming, realtime run status (per trigger.dev)",
+      "Atomic deployment versions protect already-started tasks from code changes (per trigger.dev)",
+      "Apache-2.0, self-hostable, with managed commercial cloud (per trigger.dev)"
+    ],
+    "name": "Trigger.dev",
+    "orchestration_verified": true,
+    "source_url": "https://trigger.dev",
+    "status": "active",
+    "url": "https://trigger.dev",
+    "vendor": "Trigger.dev",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "platform",
+    "description": "Adds durable workflows and queues to apps or AI agents on Postgres: normal-code workflows with branches, loops, subtasks, retries, and durable HITL waits.",
+    "features": [
+      "Normal-code workflows with branches, loops, subtasks, retries, durable queues (per dbos.dev)",
+      "Postgres-backed: install the open-source DBOS library and connect a Postgres database (per dbos.dev)",
+      "Durable human-in-the-loop waits, signals, and long pauses across restarts/redeploys (per dbos.dev)",
+      "First-party integrations: OpenAI Agents, LlamaIndex, Pydantic AI (per dbos.dev)",
+      "DBOS Conductor: recovery, cancellation, resume/restart, alerts, monitoring; self-host/on-prem or cloud (per dbos.dev)"
+    ],
+    "name": "DBOS",
+    "orchestration_verified": true,
+    "source_url": "https://dbos.dev/",
+    "status": "commercial",
+    "url": "https://dbos.dev/",
+    "vendor": "DBOS, Inc.",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "platform",
+    "description": "Durable task engine: tasks compose into DAG workflows or spawn child tasks at runtime, with every task persisted with its state and results.",
+    "features": [
+      "Fundamental unit: a task; tasks compose into DAG workflows or durable child tasks spawned at runtime (per docs.hatchet.run)",
+      "Every task durable — persisted with state and results even after finishing (per docs.hatchet.run)",
+      "Retries with backoff, timeouts, concurrency, rate limits, priority, worker affinity (per docs.hatchet.run)",
+      "Workers execute tasks from queues; streaming events and cancellations supported (per docs.hatchet.run)"
+    ],
+    "name": "Hatchet",
+    "orchestration_verified": true,
+    "source_url": "https://docs.hatchet.run/home/your-first-task",
+    "status": "commercial",
+    "url": "https://docs.hatchet.run/home/your-first-task",
+    "vendor": "Hatchet",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "platform",
+    "description": "Open-source durable workflow framework built with Temporal for orchestration and Kubernetes for scale; long-running workflows persist state for months or years.",
+    "features": [
+      "'Built with Temporal for reliable orchestration and Kubernetes for scale'; Python and TypeScript libraries (per restack.io/enterprise)",
+      "Long-running workflows persist state across days, months, years; task queues, rate/concurrency controls, retry policies, cron schedules, generated REST endpoints (per restack.io/enterprise)",
+      "Developer UI visualizes, simulates, time-travels, and replays workflows/steps (per restack.io/enterprise)",
+      "Deployable in Restack Cloud, on-premises, or customer cloud/Kubernetes (per restack.io/enterprise)"
+    ],
+    "name": "Restack",
+    "orchestration_verified": true,
+    "source_url": "https://www.restack.io/enterprise",
+    "status": "commercial",
+    "url": "https://www.restack.io/enterprise",
+    "vendor": "Restack",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "platform",
+    "description": "Fair-code workflow automation combining AI features with business process automation: LangChain-based AI Agent node, HITL tool approval, and AI Agent Tool sub-node for multi-agent delegation.",
+    "features": [
+      "'Fair-code licensed workflow automation tool combining AI features with business process automation' (per docs.n8n.io)",
+      "AI Agent node: connect a chat model and tools; the agent decides which tools to call (per docs.n8n.io)",
+      "Human-in-the-loop: require approval before an AI Agent executes specific tools (per docs.n8n.io)",
+      "MCP servers connectable as tools; AI Agent Tool sub-node for multi-agent delegation (per docs.n8n.io)",
+      "Self-host (Docker, npm) or n8n Cloud; queue mode and executions/state persistence documented (per docs.n8n.io)"
+    ],
+    "name": "n8n",
+    "orchestration_verified": true,
+    "source_url": "https://docs.n8n.io",
+    "status": "commercial",
+    "url": "https://docs.n8n.io",
+    "vendor": "n8n GmbH",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on official docs 2026-09-29. License caveat: fair-code, not OSI open source."
+  },
+  {
+    "category": "observability",
+    "description": "LangChain's unified platform: end-to-end tracing of every step in an LLM application, plus deployment and evals for LangGraph agents.",
+    "features": [
+      "'End-to-end visibility into your LLM application by capturing traces; a complete record of every step that ran during a request' (per official docs)",
+      "Tool calls and LLM calls captured as nested spans (per official docs)",
+      "Tracing UI: Trajectory tab and Details tab showing the full run tree (per official docs)",
+      "Native tracing integrations: LangChain, LangGraph, Anthropic, and others (per official docs)"
+    ],
+    "name": "LangSmith",
+    "orchestration_verified": true,
+    "source_url": "https://docs.langchain.com/langsmith/observability-quickstart",
+    "status": "commercial",
+    "url": "https://docs.langchain.com/langsmith/observability-quickstart",
+    "vendor": "LangChain",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "observability",
+    "description": "Open-source AI engineering platform for collaboratively debugging, analyzing, and iterating on AI agent applications: traces, sessions, evals, datasets.",
+    "features": [
+      "Traces include all LLM and non-LLM calls (retrieval, embedding, API); multi-turn conversations tracked as sessions; agents representable as graphs (per official docs)",
+      "Capture via native Python/JS SDKs, 100+ integrations, OpenTelemetry, or LLM gateways like LiteLLM (per official docs)",
+      "Evaluation: production traffic scoring, LLM-as-a-judge, code evaluators, user feedback, manual labeling; datasets and experiments (per official docs)",
+      "Self-hostable and open-source (per official docs)"
+    ],
+    "name": "Langfuse",
+    "orchestration_verified": true,
+    "source_url": "https://langfuse.com/docs",
+    "status": "active",
+    "url": "https://langfuse.com/docs",
+    "vendor": "Langfuse",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "observability",
+    "description": "Open-source AI observability and evaluation built on OpenTelemetry/OpenInference: step-by-step tracing, evaluator scoring, prompt management, datasets & experiments.",
+    "features": [
+      "Tracing captures model calls, retrieval, tool use, and custom logic step by step (per repo docs)",
+      "Evaluations: score traces/spans with LLM-based evaluators, code-based checks, or human labels (per repo docs)",
+      "Prompt management (versioning, playground, span replay); datasets & experiments (per repo docs)",
+      "Evaluator integrations with Ragas, Deepeval, Cleanlab (per repo docs)"
+    ],
+    "name": "Arize Phoenix",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/arize-ai/phoenix/blob/HEAD/docs/phoenix.mdx",
+    "status": "active",
+    "url": "https://github.com/arize-ai/phoenix",
+    "vendor": "Arize AI",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "observability",
+    "description": "Active observability platform for instrumenting, understanding, and improving agents: instrument → observe → annotate → evaluate → deploy.",
+    "features": [
+      "'Active observability platform for instrumenting, understanding, and improving agents' (per official docs)",
+      "Captures traces from AI applications via provider/framework integrations (per official docs)",
+      "Annotation with human feedback and dataset building (per official docs)",
+      "Experiments for testing changes; playgrounds and evals; coding-agent setup via the bt CLI (per official docs)"
+    ],
+    "name": "Braintrust",
+    "orchestration_verified": true,
+    "source_url": "https://www.braintrust.dev/docs",
+    "status": "commercial",
+    "url": "https://www.braintrust.dev/docs",
+    "vendor": "Braintrust",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "observability",
+    "description": "Apache-2.0 open-source LLM observability and evaluation platform by Comet: agent tracing with full trace trees, datasets, experiments, LLM-as-a-judge metrics.",
+    "features": [
+      "AI agent tracing with full trace trees for multi-step agents and tool calls (per repo README)",
+      "Datasets, experiments, and LLM-as-a-judge metrics (hallucination detection, moderation, RAG assessment) (per repo README)",
+      "Prompt playground and PyTest integration for CI/CD evaluation (per repo README)",
+      "Framework-agnostic (SDK + OpenTelemetry); integrations incl. Google ADK, Autogen, AG2 (per repo README)",
+      "Full platform free to self-host (server + web app), Apache-2.0 (per repo README)"
+    ],
+    "name": "Opik",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/comet-ml/opik/blob/HEAD/README.md",
+    "status": "active",
+    "url": "https://github.com/comet-ml/opik",
+    "vendor": "Comet",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "observability",
+    "description": "Pydantic's OpenTelemetry-native agent observability: records request, model, tool, API, and database work as one trace; token/cost tracked per model and provider.",
+    "features": [
+      "'Records the request, model, tool, external API and database work as one trace' (per official page)",
+      "Agent runs detected from OTel GenAI, OpenInference, OpenLLMetry, and framework conventions (Pydantic AI, LangGraph, OpenAI Agents SDK, CrewAI, ADK, Strands, Semantic Kernel) (per official page)",
+      "Data queryable with PostgreSQL-compatible SQL; token/cost tracked per model and provider (per official page)",
+      "Versioned prompt templates deployable without code changes; evals via pydantic-evals (per official page)"
+    ],
+    "name": "Pydantic Logfire",
+    "orchestration_verified": true,
+    "source_url": "https://pydantic.dev/logfire/llm-observability",
+    "status": "commercial",
+    "url": "https://pydantic.dev/logfire/llm-observability",
+    "vendor": "Pydantic",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "observability",
+    "description": "Open-source (MIT) observability and DevTool platform for AI agents: session replays in two lines of code, with step-by-step execution graphs and LLM cost tracking.",
+    "features": [
+      "'Session replays in 2 lines of code' (agentops.init() / agentops.end_session()) (per repo README)",
+      "Replay analytics and debugging with step-by-step agent execution graphs (per repo README)",
+      "LLM cost management tracking spend with foundation model providers (per repo README)",
+      "Native integrations: OpenAI Agents SDK, CrewAI, AG2 (AutoGen), Camel AI, LangChain (per repo README)",
+      "MIT; self-hosting supported (per repo README)"
+    ],
+    "name": "AgentOps",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/AgentOps-AI/agentops",
+    "status": "active",
+    "url": "https://github.com/AgentOps-AI/agentops",
+    "vendor": "AgentOps",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "observability",
+    "description": "Apache-2.0 open-source AI gateway and LLM observability platform: one API key to 100+ models with routing/fallbacks, plus traces, sessions, and cost analytics.",
+    "features": [
+      "Gateway: 100+ AI models through one API key with intelligent routing and automatic fallbacks (per repo README)",
+      "Observability: inspect and debug traces & sessions for agents, chatbots, document pipelines (per repo README)",
+      "Cost, latency, and quality analytics; prompt management and playground (per repo README)",
+      "Self-hostable via Docker/Helm; SOC 2 and GDPR compliant; free tier of 10k requests/month (per repo README)"
+    ],
+    "name": "Helicone",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/Helicone/helicone",
+    "status": "active",
+    "url": "https://github.com/Helicone/helicone",
+    "vendor": "Helicone",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "observability",
+    "description": "AI gateway + observability + guardrails + governance: unified API to 1,600+ LLMs with real-time observability, cost monitoring, and an MCP gateway.",
+    "features": [
+      "Homepage reads 'Portkey is now PRISMA AIRS AI Gateway' — both brandings current (per official site)",
+      "Unified API access to 1,600+ LLMs (per official site)",
+      "Real-time observability dashboard for LLM behavior and cost/usage monitoring (per official site)",
+      "MCP Gateway centralizing authentication, access, and observability of MCP servers (per official site)",
+      "PII redaction; open-sourced internal LLM pricing dataset (per official site)"
+    ],
+    "name": "Portkey",
+    "orchestration_verified": true,
+    "source_url": "https://portkey.ai",
+    "status": "commercial",
+    "url": "https://portkey.ai",
+    "vendor": "Portkey",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "observability",
+    "description": "Open-source LLM evaluation framework: unit-test LLM outputs with Pytest-style assertions; 50+ metrics covering agents, tool use, conversational, safety, RAG, and voice.",
+    "features": [
+      "'Unit test LLM outputs with Pytest-style assertions' (per repo docs)",
+      "50+ ready-to-use metrics: LLM-as-a-judge, agent, tool-use, conversational, voice, safety, RAG, multimodal (per repo docs)",
+      "End-to-end, trajectory-based, and component-level evals for AI agents, conversational agents, voice AI, RAG, MCP systems (per repo docs)",
+      "Synthetic dataset generation for hard-to-collect edge cases (per repo docs)",
+      "Local-first: runs in your own environment with no account needed (per repo docs)"
+    ],
+    "name": "DeepEval",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/confident-ai/deepeval/blob/HEAD/docs/content/docs/introduction.mdx",
+    "status": "active",
+    "url": "https://github.com/confident-ai/deepeval",
+    "vendor": "Confident AI",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "observability",
+    "description": "Toolkit for evaluating and optimizing LLM applications: objective LLM-based and traditional metrics plus production-aligned test data generation.",
+    "features": [
+      "'Your ultimate toolkit for evaluating and optimizing LLM applications' (per repo README)",
+      "Objective metrics: LLM-based and traditional (per repo README)",
+      "Test data generation, including production-aligned test set generation (per repo README)",
+      "Integrations with LangChain and major observability tools; pip install ragas (per repo README)",
+      "Org renamed Exploding Gradients → Vibrant Labs (github.com/vibrantlabsai/ragas); Apache-2.0 (per repo README)"
+    ],
+    "name": "Ragas",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/vibrantlabsai/ragas",
+    "status": "active",
+    "url": "https://github.com/vibrantlabsai/ragas",
+    "vendor": "Vibrant Labs",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "observability",
+    "description": "Framework for LLM evaluations from the UK AI Security Institute: prompt engineering, tool use, multi-turn dialog, model-graded evals, and 200+ pre-built evaluations.",
+    "features": [
+      "'A framework for large language model evaluations created by the UK AI Security Institute' (per repo README)",
+      "Built-in facilities for prompt engineering, tool usage, multi-turn dialog, model-graded evaluations (per repo README)",
+      "Extensions for new elicitation/scoring techniques via other Python packages (per repo README)",
+      "200+ pre-built evaluations runnable on any model (per repo README)",
+      "MIT; machine-readable docs (llms.txt) (per repo README)"
+    ],
+    "name": "Inspect AI",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/UKGovernmentBEIS/inspect_ai",
+    "status": "active",
+    "url": "https://github.com/UKGovernmentBEIS/inspect_ai",
+    "vendor": "UK AI Security Institute",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29."
+  },
+  {
+    "category": "observability",
+    "description": "Cross-framework human-in-the-loop SDK (function-level approval gates routed via Slack/email/SMS) — deprecated; the repo now points to a coding-agent rebuild.",
+    "features": [
+      "Repo README: 'the code here is pretty much all deprecated — try the rebuild at humanlayer.com' (per repo README)",
+      "Original product: function-level human-approval gates with routing via Slack/email/SMS and audit/run attribution (per repo README)",
+      "Repo repositioned as 'the best way to get AI coding agents to solve hard problems in complex codebases' (per repo README)",
+      "Repository public but non-archived (per GitHub metadata)"
+    ],
+    "name": "HumanLayer",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/humanlayer/humanlayer",
+    "status": "archived",
+    "url": "https://github.com/humanlayer/humanlayer",
+    "vendor": "HumanLayer",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the official project repo/docs 2026-09-29. Original HITL SDK deprecated per its own README; development moved to a coding-agent rebuild."
+  },
+  {
+    "category": "benchmark",
+    "description": "Benchmark for tool-agent-user interaction in real-world domains (airline + retail): emulates dynamic conversations and grades end-of-conversation database state.",
+    "features": [
+      "LM-simulated user ↔ language agent with domain API tools and policy guidelines (per paper)",
+      "pass^k metric for reliability over k trials (per paper)",
+      "Headline (authors): GPT-4o succeeds on <50% of tasks; pass^8 < 25% in retail (per paper)",
+      "Follow-ups: τ²-bench (2506.07982), hyper-τ-bench (Sept 2026) (per search snippets)"
+    ],
+    "name": "τ-bench (tau-bench)",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2406.12045",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2406.12045",
+    "vendor": "Sierra Research",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "benchmark",
+    "description": "Benchmark for general AI assistants: 466 human-curated real-world questions across 3 difficulty levels requiring reasoning, multimodality, browsing, and tool use.",
+    "features": [
+      "466 human-curated questions; concise, factual, non-gameable answers (per paper)",
+      "Humans 92% vs 15% for GPT-4 with plugins (per paper)",
+      "Standard capability benchmark used by multi-agent systems (e.g. Magentic-One) (per paper)"
+    ],
+    "name": "GAIA",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2311.12983",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2311.12983",
+    "vendor": "Meta AI / Hugging Face / AutoGPT",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "benchmark",
+    "description": "Multi-dimensional benchmark of LLMs as agents across 8 environments: OS, database, knowledge graph, card game, lateral thinking, household, shopping, browsing.",
+    "features": [
+      "8 distinct environments, 5 newly created (per paper)",
+      "Headline (authors): big gap between top commercial LLMs and OSS LLMs; poor long-term reasoning/decision-making/instruction-following are the main obstacles (per paper)",
+      "Repo: github.com/THUDM/AgentBench (per paper)"
+    ],
+    "name": "AgentBench",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2308.03688",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2308.03688",
+    "vendor": "THUDM (Tsinghua)",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "benchmark",
+    "description": "214 realistic, time-consuming, automatically-evaluable web tasks; no model exceeds 26 points accuracy — SOTA web agents score near zero.",
+    "features": [
+      "214 realistic tasks (e.g. monitoring real-estate markets, locating businesses) (per paper)",
+      "Headline (authors): no model exceeds 26 points; closed-book LMs have decent accuracy but low precision; SOTA web agents near zero (per paper)",
+      "Authors introduce SeePlanAct (SPA); SPA + closed-book ensemble best overall (per paper)",
+      "Repo: github.com/oriyor/assistantbench (per paper)"
+    ],
+    "name": "AssistantBench",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2407.15711",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2407.15711",
+    "vendor": "Tel Aviv University et al.",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "benchmark",
+    "description": "Self-hosted realistic web environment: 812 long-horizon tasks across e-commerce, social forum, GitLab development, and CMS, grading functional correctness.",
+    "features": [
+      "812 tasks across 4 fully functional website domains (per paper)",
+      "Evaluates functional correctness, not action sequences (per paper)",
+      "Headline (authors): best GPT-4 agent 14.41% end-to-end success vs 78.24% human — lack of active exploration and failure recovery (per paper)",
+      "Repo: github.com/web-arena-x/webarena; webarena.dev (per search snippets)"
+    ],
+    "name": "WebArena",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2307.13854",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2307.13854",
+    "vendor": "CMU",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "benchmark",
+    "description": "First dataset for generalist web agents: 2,000+ open-ended tasks from 137 real websites across 31 domains, with crowdsourced action sequences.",
+    "features": [
+      "Three generalization levels: cross-task, cross-website, cross-domain (per paper)",
+      "Filtering raw HTML with a small LM before the main LLM improves effectiveness/efficiency (per paper)",
+      "'Substantial room to improve towards truly generalizable agents' (per paper)",
+      "NeurIPS 2023 Spotlight (per search snippets); repo: github.com/OSU-NLP-Group/Mind2Web (per search snippets)"
+    ],
+    "name": "Mind2Web",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2306.06070",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2306.06070",
+    "vendor": "Ohio State University",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "benchmark",
+    "description": "LM-emulated sandbox for identifying agent risks: LM emulates tool execution (standard + adversarial modes) plus LM-based automatic safety evaluation.",
+    "features": [
+      "No manual environment instantiation (per paper)",
+      "36 high-stakes toolkits, 144 test cases, 9 risk types (per paper)",
+      "Headline (authors): 68.8% of identified failures validated as real-world failures; safest LM agent fails 23.9% of the time (per paper)",
+      "ICLR 2024 Spotlight (per search snippets)"
+    ],
+    "name": "ToolEmu",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2309.15817",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2309.15817",
+    "vendor": "U. Toronto / Vector / Stanford",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "benchmark",
+    "description": "LLM multi-agent collaboration benchmark on Overcooked-AI: 30 open-ended cooking tasks across 6 complexity levels with process-oriented collaboration metrics.",
+    "features": [
+      "Two LLM agents cooperate via natural-language communication (per paper)",
+      "Process-oriented metrics (SR/PC/IC/RC) assessing how agents coordinate, not just final success (per paper)",
+      "Headline (authors): 13 LLMs tested; strong goal interpretation but collaboration collapses at levels 5–6 (0–6% SR) (per paper)",
+      "EMNLP 2025 Main; repo: github.com/YusaeMeow/Collab-Overcooked (per search snippets)"
+    ],
+    "name": "Collab-Overcooked",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2502.20073",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2502.20073",
+    "vendor": "academia",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "benchmark",
+    "description": "First comprehensive benchmark for LLM-based multi-agent systems evaluating collaboration AND competition across scenarios from Werewolf to Minecraft building.",
+    "features": [
+      "Scenarios: Werewolf, research co-authoring, Minecraft building, database analysis, coding (per paper)",
+      "Built on the MARBLE framework; milestone-based KPIs measure collaboration/competition quality (per paper)",
+      "Evaluates coordination protocols (star, chain, tree, graph) — graph topology best in research scenario (per paper)",
+      "ACL 2025; code: github.com/MultiagentBench/MARBLE (per search snippets)"
+    ],
+    "name": "MultiAgentBench",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2503.01935",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2503.01935",
+    "vendor": "UIUC",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "benchmark",
+    "description": "Empirically grounded failure taxonomy for multi-agent LLM systems: 1,642 annotated traces across 7 frameworks, 14 failure modes — organizational-design problems, not just LLM capability.",
+    "features": [
+      "14 failure modes in 3 categories: system design, inter-agent misalignment, task verification (per secondary sources)",
+      "Failure rates 41%–86.7% on SOTA open-source multi-agent systems (per secondary sources)",
+      "NeurIPS 2025 Datasets & Benchmarks track (per secondary sources)",
+      "arXiv ID not yet confirmed on the abs page — needs one direct page open before treating as verified"
+    ],
+    "name": "MAST (Why Do Multi-Agent LLM Systems Fail?)",
+    "orchestration_verified": false,
+    "source_url": "",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2503.13657",
+    "vendor": "UC Berkeley",
+    "verified_date": "",
+    "notes": "arXiv ID 2503.13657 not yet confirmed on the abs page (provisional); corroborated by multiple secondary sources. Official-page fetch was rate-limited or returned no readable content; facts rest on search-result snippets only. Marked unverified per house rule — do not cite as confirmed."
+  },
+  {
+    "category": "paper",
+    "description": "Open-source framework for building LLM applications via conversable agents (LLMs, human inputs, tools combined in programmable conversation patterns).",
+    "features": [
+      "Conversation patterns programmable in natural language and code (per paper)",
+      "Effective across math, coding, QA, operations research, decision-making, entertainment (per paper)",
+      "Microsoft Research; the framework is now in maintenance mode (per repo README)"
+    ],
+    "name": "AutoGen (paper)",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2308.08155",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2308.08155",
+    "vendor": "Microsoft Research",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "paper",
+    "description": "Encodes Standardized Operating Procedures into prompt sequences for multi-agent collaboration, combating cascading hallucinations from naively chaining LLMs.",
+    "features": [
+      "Assembly-line paradigm with diverse roles; agents verify intermediate results (per paper)",
+      "More coherent solutions on collaborative software-engineering benchmarks than prior chat-based MAS (per paper)",
+      "Revised Nov 2024 (v7) (per arXiv)"
+    ],
+    "name": "MetaGPT (paper)",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2308.00352",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2308.00352",
+    "vendor": "DeepWisdom",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "paper",
+    "description": "Chat-powered software development framework: agents guided in what to communicate (chat chain) and how (communicative dehallucination).",
+    "features": [
+      "Natural language advantageous for system design; programming language helpful for debugging (per paper)",
+      "Language as the unifying bridge for multi-agent task-solving (per paper)",
+      "Tsinghua; submitted Jul 2023, revised Jun 2024 (per arXiv)"
+    ],
+    "name": "ChatDev (paper)",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2307.07924",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2307.07924",
+    "vendor": "Tsinghua",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results. Note: this ID (2307.07924) is the ChatDev paper; the CAMEL framework paper by Li et al. is a different work."
+  },
+  {
+    "category": "paper",
+    "description": "Microsoft's open-source generalist multi-agent system: a lead Orchestrator plans, tracks progress, and replans to recover from errors, directing specialized agents.",
+    "features": [
+      "Specialized agents: web browser, files, code execution (per paper)",
+      "Statistically competitive with SOTA on GAIA, AssistantBench, and WebArena without modifying core capabilities (per paper)",
+      "Modular: agents addable/removable without prompt tuning or training (per paper)",
+      "Ships with AutoGenBench, a standalone rigorous eval harness (per paper)"
+    ],
+    "name": "Magentic-One (paper)",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2411.04468",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2411.04468",
+    "vendor": "Microsoft Research",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "paper",
+    "description": "First comprehensive analysis of agent protocols: two-dimensional classification (context-oriented vs inter-agent × general vs domain-specific) with security/scalability/latency comparison.",
+    "features": [
+      "Two-dimensional classification: context-oriented vs inter-agent × general-purpose vs domain-specific (per paper)",
+      "Comparative performance analysis across security, scalability, latency (per paper)",
+      "Future directions: adaptability, privacy preservation, group-based interaction, layered architectures (per paper)"
+    ],
+    "name": "A Survey of AI Agent Protocols",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2504.16736",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2504.16736",
+    "vendor": "Yang et al.",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "paper",
+    "description": "Argues tools-becoming-agents turn full systems into LLM-based Multi-Agent Systems (LaMAS), and proposes a preliminary LaMAS protocol covering technical, privacy, and business requirements.",
+    "features": [
+      "LaMAS advantages: dynamic task decomposition/organic specialization, flexibility, proprietary-data preservation per entity, monetization per entity (per paper)",
+      "Proposes a preliminary protocol covering technical requirements, data privacy, and business incentives (per paper)"
+    ],
+    "name": "LLM-Based Multi-Agent Systems",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2411.14033",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2411.14033",
+    "vendor": "Yang et al.",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "paper",
+    "description": "Surveys single- and multi-agent architectures (ReAct, RAISE, Reflexion, LATS, AGentverse, MetaGPT) and identifies design themes: leadership, communication styles, planning–execution–reflection.",
+    "features": [
+      "Covers ReAct, RAISE, Reflexion, LATS, Dylan, AGentverse, MetaGPT (per paper)",
+      "Design themes: leadership impact, communication styles, planning–execution–reflection phases (per paper)"
+    ],
+    "name": "The Landscape of Emerging AI Agent Architectures",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2404.11584",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2404.11584",
+    "vendor": "Masterman et al.",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results. Note: arXiv 2502.06744 is an unrelated plasma-physics paper — this record uses the correct survey ID 2404.11584."
+  },
+  {
+    "category": "paper",
+    "description": "Comprehensive IJCAI 2024 survey of LLM-based multi-agent systems: simulated domains, agent profiling and communication, capacity-growth mechanisms, datasets/benchmarks.",
+    "features": [
+      "What domains/environments are simulated, how agents are profiled and communicate, mechanisms for capacity growth (per paper)",
+      "Summarizes commonly used datasets/benchmarks (per paper)",
+      "Companion open-source repo tracking LLM-multi-agent research: github.com/taichengguo/LLM_MultiAgents_Survey_Papers (per search snippets)"
+    ],
+    "name": "LLM-based Multi-Agents: A Survey of Progress and Challenges",
+    "orchestration_verified": true,
+    "source_url": "https://arxiv.org/abs/2402.01680",
+    "status": "paper",
+    "url": "https://arxiv.org/abs/2402.01680",
+    "vendor": "Guo et al.",
+    "verified_date": "2026-09-29",
+    "notes": "Verified on the arXiv abstract page 2026-09-29 (ID confirmed); headline figures are the authors' reported results."
+  },
+  {
+    "category": "paper",
+    "description": "Anthropic's field guide to production agents: workflows vs agents, the 'simplest solution possible' rule, and canonical patterns (prompt chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer).",
+    "features": [
+      "Workflows = LLMs/tools in predefined code paths; agents = LLMs dynamically directing their own processes (per secondary sources)",
+      "'Find the simplest solution possible, and only increase complexity when needed' (per secondary sources)",
+      "Canonical patterns: prompt chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer (per secondary sources)",
+      "Authors: Erik Schluntz & Barry Zhang, 19 Dec 2024 (per secondary sources)"
+    ],
+    "name": "Building Effective Agents (Anthropic)",
+    "orchestration_verified": false,
+    "source_url": "",
+    "status": "paper",
+    "url": "https://www.anthropic.com/engineering/building-effective-agents",
+    "vendor": "Anthropic",
+    "verified_date": "",
+    "notes": "Official Anthropic page fetch was rate-limited; details from corroborating secondary sources. Official-page fetch was rate-limited or returned no readable content; facts rest on search-result snippets only. Marked unverified per house rule — do not cite as confirmed."
+  },
+  {
+    "name": "Flowise",
+    "vendor": "FlowiseAI",
+    "url": "https://github.com/FlowiseAI/Flowise",
+    "description": "Drag-and-drop low-code AI agent builder. Publicly archived ('Refer to Future of Flowise') — do not adopt for new builds; listed for lineage.",
+    "category": "framework",
+    "features": [
+      "low-code",
+      "visual builder",
+      "agent builder",
+      "archived"
+    ],
+    "orchestration_verified": true,
+    "source_url": "https://github.com/FlowiseAI/Flowise",
+    "verified_date": "2026-09-29",
+    "status": "archived",
+    "notes": "Archived status carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29); official repo page not re-fetched in this pass."
+  }
+]
