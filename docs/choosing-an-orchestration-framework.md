@@ -14,7 +14,7 @@ How to pick from the frameworks in this list. The honest answer: **start with th
 4. **Enterprise governance, audit, and cost control?** [BeeAI Framework](https://github.com/i-am-bee/beeai-framework) (deterministic rules), [UiPath Maestro](https://www.uipath.com/platform/agentic-automation), [Microsoft Foundry Agent Service](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/workflow), [IBM watsonx Orchestrate](https://www.ibm.com/think/topics/multi-agent-collaboration).
 5. **.NET shop?** [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) is the strongest first-class .NET option (Python parity too).
 6. **TypeScript-first?** [Mastra](https://mastra.ai/docs), [VoltAgent](https://voltagent.dev), [Trigger.dev](https://trigger.dev).
-7. **Visual/low-code builders for non-engineers?** [n8n](https://docs.n8n.io), [CrewAI AMP](https://www.crewai.com/enterprise) (Crew Studio). Do **not** adopt [Flowise](https://github.com/FlowiseAI/Flowise) (archived) or [AutoGen Studio](https://microsoft.github.io/autogen/dev/user-guide/autogenstudio-user-guide/index.html) for production (research prototype).
+7. **Visual/low-code builders for non-engineers?** [n8n](https://docs.n8n.io), [CrewAI AMP](https://crewai.com/amp) (Crew Studio). Do **not** adopt [Flowise](https://github.com/FlowiseAI/Flowise) (archived) or [AutoGen Studio](https://microsoft.github.io/autogen/dev/user-guide/autogenstudio-user-guide/index.html) for production (research prototype).
 
 ## What to avoid
 
