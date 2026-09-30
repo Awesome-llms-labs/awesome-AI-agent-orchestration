@@ -1,0 +1,16 @@
+# lychee link-checker config
+# Pre-emptive excludes for sites known to block automated checks.
+# Excludes are regexes: use domain-bare patterns so www subdomains match too.
+exclude = [
+  "openai\\.com",  # 403 to automated checks; live for humans
+  "platform\\.openai\\.com",  # 403 to automated checks; live for humans
+  "npmjs\\.com",  # bot-blocking on automated checks
+  "producthunt\\.com",
+  "marktechpost\\.com",
+  "replit\\.com",  # bot-blocking (RemoteDisconnected on plain GET)
+  "fly\\.io",  # bot-hostile to automated checks
+  "pnas\\.org",  # 403 to automated checks; live for humans
+]
+# Be lenient with rate-limited hosts; retry before failing.
+max_retries = 3
+timeout = 30
