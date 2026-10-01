@@ -7,9 +7,9 @@ A single agent is a loop: prompt, think, act, observe. Orchestration is everythi
 > **Scope:** This list is about the *coordination mechanisms* — how agents (one or many) are composed, routed, and made reliable over long horizons: orchestration frameworks (multi-agent graphs, swarms, supervisor hierarchies), agent-to-agent protocols, memory and durable state, platforms and schedulers that run agents in production, observability/eval tooling, benchmarks, and the research papers that defined the field. It goes deeper on mechanisms than the ecosystem-wide [awesome-ai-agents](https://github.com/awesome-llms-labs/awesome-ai-agents), and it is broader than [awesome-multi-agents-workflow](https://github.com/awesome-llms-labs/awesome-multi-agents-workflow), which covers *collaboration only* and explicitly excludes single-agent frameworks.
 
 
-**Verification confidence:** every entry is stamped ✅ **verified** (the claim was confirmed on the vendor's official page, the project repo, or the arXiv abstract page; verification dates 2026-09-29/30) or ⚠️ **unverified** (official-page fetch was rate-limited, so facts rest on search snippets only — never invented). Machine-readable records live in [`data/orchestration.json`](data/orchestration.json) with an `orchestration_verified` boolean per entry. **Scores, specs, and dates are never guessed.**
+**Verification confidence:** every entry is stamped ✅ **verified** (the claim was confirmed on the vendor's official page, the project repo, or the arXiv abstract page; verification dates 2026-09-29, 2026-09-30, and 2026-10-01) or ⚠️ **unverified** (official-page fetch was rate-limited, so facts rest on search snippets only — never invented). Machine-readable records live in [`data/orchestration.json`](data/orchestration.json) with an `orchestration_verified` boolean per entry. **Scores, specs, and dates are never guessed.**
 
-**Scale:** 98 entries across 7 categories — 29 frameworks, 9 protocols, 10 memory systems, 18 platforms, 13 observability/eval tools, 10 benchmarks, 9 papers. **88 verified** on official sources; **10 explicitly marked unverified** (listed in the README with a ⚠️ and a reason, never dropped).
+**Scale:** 99 entries across 7 categories — 29 frameworks, 9 protocols, 11 memory systems, 18 platforms, 13 observability/eval tools, 10 benchmarks, 9 papers. **89 verified** on official sources; **10 explicitly marked unverified** (listed in the README with a ⚠️ and a reason, never dropped).
 
 ## Contents
 https://crewai.com/amp
@@ -110,6 +110,7 @@ Orchestration fails without durable state. These are the memory layers agents re
 - [Redis Agent Memory](https://github.com/redis/agent-memory-server) — ✅ Redis: managed memory layer (part of Redis Iris) — session memory with TTL plus background promotion of extracted facts to long-term store.
 - [Letta](https://letta.com) — ⚠️ Letta (ex-MemGPT): stateful agents from the MemGPT creators (UC Berkeley Sky Computing Lab lineage) — hierarchical memory (self-editing in-context "memory blocks" + archival storage), agents persist over a REST server. (Lineage verified; technical details snippet-level.)
 - [OpenMemory](https://github.com/mem0ai/mem0) — ⚠️ mem0: local-first **MCP application** exposing one shared memory layer as an MCP server — any MCP client (Claude Desktop/Code, Cursor, Windsurf, ChatGPT) reads/writes cross-app memory. (Snippet-level; note several unrelated projects share the "OpenMemory" name.)
+- [Hyperconsciousness](https://github.com/louis030195/hyperconsciousness): ✅ Louis Beaumont: developer-alpha Rust knowledge store for persistent agent context through CLI/MCP/HTTP, encrypted append-only records, device sync, and scoped expiring grants. MIT. APIs may change; no independent security audit. Agent orchestration is separate.
 
 ---
 
