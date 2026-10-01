@@ -875,6 +875,24 @@
     "notes": "Carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29, 88/89 verified); official page not re-fetched in this pass."
   },
   {
+    "category": "memory",
+    "description": "Developer-alpha Rust knowledge store for persistent agent context through CLI, MCP and HTTP interfaces. Records are signed, encrypted and append-only; devices synchronize records, and agents read or write through scoped, expiring grants.",
+    "features": [
+      "Encrypted, signed, append-only records",
+      "CLI, MCP and HTTP access",
+      "Scoped, expiring grants",
+      "Cross-device record synchronization"
+    ],
+    "name": "Hyperconsciousness",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/louis030195/hyperconsciousness#readme",
+    "status": "active",
+    "url": "https://github.com/louis030195/hyperconsciousness",
+    "vendor": "Louis Beaumont",
+    "verified_date": "2026-10-01",
+    "notes": "Verified against the public README, LICENSE and MISSION.md on 2026-10-01. MIT; developer alpha for experimentation, with changing APIs and no independent security audit. Grants constrain server access, not processes holding owner keys. Receiving model providers can see returned plaintext. Agent orchestration and client applications are separate."
+  },
+  {
     "category": "platform",
     "description": "Managed supervisor pattern on AWS: designate one Bedrock Agent as supervisor and associate collaborator sub-agents that plan, split tasks, work in parallel, and hand off.",
     "features": [
