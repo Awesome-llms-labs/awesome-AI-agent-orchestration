@@ -1442,6 +1442,24 @@
     "notes": "Verified on the official project repo/docs 2026-09-29. Original HITL SDK deprecated per its own README; development moved to a coding-agent rebuild."
   },
   {
+    "category": "observability",
+    "description": "Open-source web dashboard for a running OpenClaw gateway: live session list, cron task view, token-usage and 7-day message-trend charts, and system metrics (uptime, memory).",
+    "features": [
+      "Reads the OpenClaw gateway over WebSocket JSON-RPC: sessions.list, session.status, cron.list, tasks.list, metrics.system, metrics.messages (per repo code, gateway-client.js)",
+      "Session view with model, runtime, and status; token stats per session via the monitor API (per repo README and backend routes)",
+      "Token-usage bar chart per model and 7-day message-trend chart rendered with ECharts (per repo README)",
+      "Self-hosted: Vue 3 frontend, Node.js/Express monitor API; MIT license (per repo README and LICENSE)"
+    ],
+    "name": "OpenClaw Monitor",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/flik2002/openclaw-monitor",
+    "status": "maintenance",
+    "url": "https://github.com/flik2002/openclaw-monitor",
+    "vendor": "flik2002",
+    "verified_date": "2026-10-04",
+    "notes": "Verified against the project repo on 2026-10-04 (gateway-client.js WebSocket JSON-RPC calls; backend API routes). Status 'maintenance': stable v1.0.0 release, last repo push 2026-05-14. Token usage shown as counts; the code performs no cost calculation."
+  },
+  {
     "category": "benchmark",
     "description": "Benchmark for tool-agent-user interaction in real-world domains (airline + retail): emulates dynamic conversations and grades end-of-conversation database state.",
     "features": [

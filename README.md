@@ -9,7 +9,7 @@ A single agent is a loop: prompt, think, act, observe. Orchestration is everythi
 
 **Verification confidence:** every entry is stamped ✅ **verified** (the claim was confirmed on the vendor's official page, the project repo, or the arXiv abstract page; verification dates 2026-09-29/30) or ⚠️ **unverified** (official-page fetch was rate-limited, so facts rest on search snippets only — never invented). Machine-readable records live in [`data/orchestration.json`](data/orchestration.json) with an `orchestration_verified` boolean per entry. **Scores, specs, and dates are never guessed.**
 
-**Scale:** 98 entries across 7 categories — 29 frameworks, 9 protocols, 10 memory systems, 18 platforms, 13 observability/eval tools, 10 benchmarks, 9 papers. **88 verified** on official sources; **10 explicitly marked unverified** (listed in the README with a ⚠️ and a reason, never dropped).
+**Scale:** 99 entries across 7 categories — 29 frameworks, 9 protocols, 10 memory systems, 18 platforms, 14 observability/eval tools, 10 benchmarks, 9 papers. **88 verified** on official sources; **10 explicitly marked unverified** (listed in the README with a ⚠️ and a reason, never dropped).
 
 ## Contents
 https://crewai.com/amp
@@ -160,6 +160,7 @@ When five agents disagree at scale, you need traces, not vibes.
 - [AgentOps](https://github.com/AgentOps-AI/agentops) — ✅ AgentOps: open-source (MIT) DevTool platform — session replays in two lines of code; step-by-step execution graphs; LLM cost tracking; native integrations (OpenAI Agents SDK, CrewAI, AG2, CAMEL, LangChain); self-hostable.
 - [Helicone](https://github.com/Helicone/helicone) — ✅ Helicone: Apache-2.0 open-source **AI gateway + observability** — 100+ models behind one API key with routing/fallbacks; traces and sessions for agents; cost/latency/quality analytics; self-hostable via Docker/Helm.
 - [Portkey](https://portkey.ai) — ✅ Portkey: AI gateway + observability + guardrails + governance — unified API to 1,600+ LLMs, real-time observability and cost monitoring, **MCP gateway** centralizing MCP-server auth/access/observability, PII redaction. (Homepage now also brands as "PRISMA AIRS AI Gateway".)
+- [OpenClaw Monitor](https://github.com/flik2002/openclaw-monitor) — ✅ flik2002: MIT-licensed open-source web dashboard for a running OpenClaw gateway — live session list, cron task view, token-usage and 7-day message-trend charts, system metrics; Vue 3 + ECharts frontend, Node.js backend over the gateway's WebSocket JSON-RPC API.
 
 ### Evaluation frameworks
 
