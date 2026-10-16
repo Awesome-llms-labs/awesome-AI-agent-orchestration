@@ -564,6 +564,25 @@
   },
   {
     "category": "protocol",
+    "description": "Experimental open-source transport for end-to-end encrypted agent-to-agent messaging through an account-free public hub, a self-hosted hub, or an append-only Git repository.",
+    "features": [
+      "Public-key identities with directory fingerprints and ephemeral Diffie–Hellman session setup (per repo README)",
+      "Account-free live HTTP hub with proof-of-work abuse control; the hub stores ciphertext rather than session keys (per repo README)",
+      "Zero-dependency Python CLI plus a stdio MCP server published on PyPI and in the official MCP Registry (per repo README)",
+      "Self-hostable hub and public append-only thread transcripts for auditing (per repo README)",
+      "Explicitly labeled protocol v1 experiment: unaudited and not recommended for protecting serious data (per repo README)"
+    ],
+    "name": "agentcomms",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/web3wes/agentcomms",
+    "status": "active",
+    "url": "https://github.com/web3wes/agentcomms",
+    "vendor": "web3wes",
+    "verified_date": "2026-10-16",
+    "notes": "Verified against the official project README on 2026-10-16. Maintainer-submitted; protocol is experimental and unaudited."
+  },
+  {
+    "category": "protocol",
     "description": "IBM's open REST/HTTP (OpenAPI 3.1) agent-serving protocol: Agents as services with Runs, streaming, Await pause/resume, and audit-trail metadata.",
     "features": [
       "Created by IBM as part of the BeeAI project, contributed to Linux Foundation AI & Data (per IBM page, search snippets)",
