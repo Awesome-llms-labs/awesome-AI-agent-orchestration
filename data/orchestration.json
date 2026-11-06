@@ -1092,6 +1092,24 @@
   },
   {
     "category": "platform",
+    "description": "Open-source AI Skill Runtime that turns reusable Skills into observable state-machine workflows with inspectable steps, review checkpoints, retry and rewind controls, and versioned artifacts.",
+    "features": [
+      "Skill-to-Workflow conversion with explicit steps, inputs, outputs, tools, and state transitions (per official README)",
+      "Progress inspection, human review checkpoints, targeted retry and rewind, and versioned artifacts (per official README)",
+      "Desktop Mode for local use plus shared-service deployment and external-agent access (per official README)",
+      "Apache-2.0 open-source repository with a documented Quick Start"
+    ],
+    "name": "LazyMind",
+    "orchestration_verified": true,
+    "source_url": "https://github.com/LazyAGI/LazyMind/blob/9bed2118cb80b7e75cb21044ce0f36d61db885c8/README.md",
+    "status": "active",
+    "url": "https://github.com/LazyAGI/LazyMind",
+    "vendor": "LazyAGI",
+    "verified_date": "2026-11-06",
+    "notes": "Verified against the official repository README and Apache-2.0 license at commit 9bed2118cb80b7e75cb21044ce0f36d61db885c8. No adoption, performance, or maintainer-endorsement claim is made."
+  },
+  {
+    "category": "platform",
     "description": "Durable functions for background jobs, agents, and event-driven workflows: multi-step orchestration checkpoints, waits, and fan-out across steps.",
     "features": [
       "Multi-step orchestration checkpoints, waits, and fans out across steps (per inngest.com)",

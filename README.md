@@ -9,7 +9,7 @@ A single agent is a loop: prompt, think, act, observe. Orchestration is everythi
 
 **Verification confidence:** every entry is stamped ✅ **verified** (the claim was confirmed on the vendor's official page, the project repo, or the arXiv abstract page; verification dates 2026-09-29/30) or ⚠️ **unverified** (official-page fetch was rate-limited, so facts rest on search snippets only — never invented). Machine-readable records live in [`data/orchestration.json`](data/orchestration.json) with an `orchestration_verified` boolean per entry. **Scores, specs, and dates are never guessed.**
 
-**Scale:** 98 entries across 7 categories — 29 frameworks, 9 protocols, 10 memory systems, 18 platforms, 13 observability/eval tools, 10 benchmarks, 9 papers. **88 verified** on official sources; **10 explicitly marked unverified** (listed in the README with a ⚠️ and a reason, never dropped).
+**Scale:** 99 entries across 7 categories — 29 frameworks, 9 protocols, 10 memory systems, 19 platforms, 13 observability/eval tools, 10 benchmarks, 9 papers. **89 verified** on official sources; **10 explicitly marked unverified** (listed in the README with a ⚠️ and a reason, never dropped).
 
 ## Contents
 https://crewai.com/amp
@@ -136,6 +136,7 @@ The runtimes that make agent runs survive crashes, redeploys, and 3 a.m. pager d
 
 - [Temporal](https://temporal.io/solutions/ai) — ✅ Temporal Technologies: durable orchestrator — workflows-as-code retaining state for **years**; automatic retries/self-healing; HITL approvals; official integrations with OpenAI Agents SDK, Pydantic AI, Google ADK, Mastra, Strands.
 - [LangSmith Deployment](https://docs.langchain.com/langsmith/deployment-quickstart) — ✅ LangChain: managed deployment for LangGraph multi-agent applications (renamed from **LangGraph Platform**, Oct 2025); the framework stays MIT.
+- [LazyMind](https://github.com/LazyAGI/LazyMind) — ✅ LazyAGI: Apache-2.0 AI Skill Runtime that turns reusable Skills into observable state-machine workflows with inspectable steps, review checkpoints, retry/rewind, and versioned artifacts; runs locally in Desktop Mode or as a shared service.
 - [Inngest](https://inngest.com/) — ✅ Inngest: durable functions for agents and event-driven workflows — multi-step checkpoints, waits, fan-out, throttling, retries, recovery; deploys alongside your existing app. **SSPL** — not OSI open source.
 - [Trigger.dev](https://trigger.dev) — ✅ Trigger.dev: open-source durable AI agents/workflows in TypeScript — agents survive refreshes, redeploys, crashes; tool calling, HITL, frontend streaming; atomic deployment versions. Apache-2.0, self-hostable, managed cloud.
 - [DBOS](https://dbos.dev/) — ✅ DBOS, Inc.: durable workflows + queues on **Postgres** — normal-code workflows (branches, loops, subtasks, retries), durable HITL waits and signals across restarts; first-party integrations with OpenAI Agents, LlamaIndex, Pydantic AI; DBOS Conductor for recovery/monitoring.
@@ -245,4 +246,3 @@ Entries and corrections are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). 
 ## License
 
 [MIT](LICENSE) © 2026 dakotac1994
-
