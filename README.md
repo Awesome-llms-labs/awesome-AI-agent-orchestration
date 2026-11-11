@@ -9,7 +9,7 @@ A single agent is a loop: prompt, think, act, observe. Orchestration is everythi
 
 **Verification confidence:** every entry is stamped ✅ **verified** (the claim was confirmed on the vendor's official page, the project repo, or the arXiv abstract page; verification dates 2026-09-29/30) or ⚠️ **unverified** (official-page fetch was rate-limited, so facts rest on search snippets only — never invented). Machine-readable records live in [`data/orchestration.json`](data/orchestration.json) with an `orchestration_verified` boolean per entry. **Scores, specs, and dates are never guessed.**
 
-**Scale:** 98 entries across 7 categories — 29 frameworks, 9 protocols, 10 memory systems, 18 platforms, 13 observability/eval tools, 10 benchmarks, 9 papers. **88 verified** on official sources; **10 explicitly marked unverified** (listed in the README with a ⚠️ and a reason, never dropped).
+**Scale:** 99 entries across 7 categories — 29 frameworks, 9 protocols, 11 memory systems, 18 platforms, 13 observability/eval tools, 10 benchmarks, 9 papers. **89 verified** on official sources; **10 explicitly marked unverified** (listed in the README with a ⚠️ and a reason, never dropped).
 
 ## Contents
 https://crewai.com/amp
@@ -101,6 +101,7 @@ The contracts agents use to discover, message, pay, and coordinate with each oth
 Orchestration fails without durable state. These are the memory layers agents read and write across runs, restarts, and handoffs.
 
 - [Mem0](https://github.com/mem0ai/mem0) — ✅ Mem0: open-source memory layer between app and LLM — two-phase `add()` (LLM extraction → ADD/UPDATE/DELETE/NOOP reconciliation), CRUD+search scoped by `user_id`/`agent_id`/`run_id`, 20–30 vector backends (Qdrant default), optional graph memory. Apache-2.0.
+- [ConductLoop](https://github.com/EVMCOD/conductloop) — ✅ ConductLoop: open-source macOS workspace for searching and querying Obsidian vaults and Markdown notes. Local SQLite index, source references, and user-selected models including local Ollama. MIT.
 - [Graphiti](https://github.com/getzep/graphiti) — ✅ Zep: open-source **temporal knowledge-graph** framework — bi-temporal fact edges (`t_valid`/`t_invalid`), contradictions auto-invalidate old edges (history preserved), hybrid semantic + BM25 + graph retrieval. Apache-2.0.
 - [Zep](https://www.getzep.com) — ✅ Zep: managed "unified context layer" — governed, policy-filtered retrieval over a Context Graph, built on Graphiti. (Community Edition deprecated April 2025; OSS effort is on Graphiti.)
 - [Memori](https://github.com/MemoriLabs/Memori) — ✅ Memori Labs: agent-native memory infrastructure — Python/TS SDKs; **LLM client-wrapping** persists and recalls conversations automatically in the background; entity → process → session memory levels; MCP server integration; BYODB. License ambiguous (GitHub NOASSERTION vs README Apache-2.0 claim — check before depending on it).

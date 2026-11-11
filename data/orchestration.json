@@ -1789,5 +1789,24 @@
     "verified_date": "2026-09-29",
     "status": "archived",
     "notes": "Archived status carried from verified sibling-repo research (awesome-multi-agents-workflow, 2026-09-29); official repo page not re-fetched in this pass."
+  },
+  {
+    "name": "ConductLoop",
+    "vendor": "ConductLoop",
+    "url": "https://github.com/EVMCOD/conductloop",
+    "description": "Open-source macOS workspace that indexes Obsidian vaults and Markdown folders in local SQLite and answers questions with source references using a user-selected model.",
+    "category": "memory",
+    "features": [
+      "local SQLite",
+      "Obsidian",
+      "Markdown",
+      "source references",
+      "bring your own model"
+    ],
+    "orchestration_verified": true,
+    "source_url": "https://github.com/EVMCOD/conductloop",
+    "verified_date": "2026-11-11",
+    "status": "active",
+    "notes": "Official README documents local SQLite storage, macOS support and MIT license."
   }
 ]
